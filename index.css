@@ -1,0 +1,242 @@
+.nav-tabs a {
+  color: black;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 14px 10px;
+  text-transform: uppercase;
+}
+
+.nav-tabs li {
+  display: inline;
+}
+
+.jumbotron {
+  background-image:url('https://newevolutiondesigns.com/images/freebies/city-wallpaper-11.jpg');
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron .container {
+  position: relative;
+  top:100px;
+}
+
+.jumbotron h1 {
+  text-shadow: 2px -2px 5px grey;
+  color: black;
+  font-size: 48px;  
+  font-family: 'Shift', sans-serif;
+  font-weight: bold;
+}
+
+.jumbotron p {
+  text-shadow: none;
+  font-size: 20px;
+  color: rgb(80, 80, 170);
+}
+
+.learn-more {
+  background-color: #f7f7f7;
+  height: 350px
+}
+
+.learn-more h3 {
+  font-family: 'Shift', sans-serif;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.learn-more a{
+  color: #00b0ff;
+}
+
+.learn-more .left a{
+  color: #00b0ff;
+  float: left;
+}
+
+.learn-more .spotify img{
+  position: absolute;
+  right: 144px;
+  top: 137px;
+  height: 130px;
+}
+
+.learn-more .right a{
+  position: relative;
+  top: -39px;
+  color: #00b0ff;
+  float: right;
+}
+
+.neighborhood-guides p{
+    font-size: 25px;
+    margin-left: 220px;
+    margin-right: 220px;
+}
+
+.neighborhood-guides {
+    text-align: center;
+    margin-bottom: 13px;
+}
+
+.neighborhood-guides .img {
+    border: 2px solid #ccc;
+    background: grey;
+    font-family: Arial;
+}
+
+.neighborhood-guides .img img {
+  height: 310px;
+  width: 352px;
+}
+
+.neighborhood-guides .smallimg img{
+    height: 120px;
+    width: 352px;
+} 
+
+.neighborhood-guides .img:hover {
+    border: 2px solid #808080;
+}
+
+.neighborhood-guides .desc {
+    padding: 8px;
+    text-align: center;
+    color: white;
+}
+
+#about .top {
+  position: relative;
+  top:-20px;
+  background-image:url('http://www.vectorfree.com/media/vectors/computer-circuit-vector.jpg');
+  height: 400px;
+  color: white;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-shadow: 5px -5px 8px black;
+  color: white;
+  font-family: 'Revalia', serif;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+#about{
+  margin: 130px;
+}
+
+#programmingclub .learn-more{
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+#programmingclub .learn-more h2{
+  text-align: center;
+  font-family: 'Armata', sans-serif;
+}
+
+#programmingclub h1{
+  position: relative;
+  top:-20px;
+  background-image:url('http://41.93.48.204/club/wp-content/uploads/2015/10/programming.jpg');
+  height: 400px;
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-shadow: 5px -5px 8px black;
+  color: white;
+  font-size: 48px;
+  font-family: 'ABeeZee', sans-serif;
+  font-weight: bold;
+}
+
+#games h1{
+  position: relative;
+  top:-20px;
+  background-image:url('http://3.bp.blogspot.com/-PHJtX7oFbWA/TcY7wChO5GI/AAAAAAAAAYU/zo9G2lJ_kIY/s1600/image00.png');
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-shadow: 5px -5px 8px black;
+  color: white;
+  font-size: 48px;  
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+}
+
+#games img{
+  position: relative;
+  top:-60px;
+  left: 630px;
+    width: 500px;
+    height: 500px;
+    -ms-transform: rotate(10deg); /* IE 9 */
+    -webkit-transform: rotate(10deg); /* Chrome, Safari, Opera */
+    transform: rotate(10deg);
+}
+
+#games p{
+  font-size: 40px;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+#games .title1{
+  margin-left: 70px;
+  text-shadow: 5px -5px 8px #FAD5FF;
+  font-size: 38px;  
+  font-family: 'Revalia', cursive;
+  font-weight: bold;
+}
+
+#games .title2{
+  margin-left: 140px;
+  text-shadow: 5px -5px 8px #D5FFD8;
+  font-size: 38px;  
+  font-family: 'Revalia', cursive;
+  font-weight: bold;
+}
+
+#more h1{
+  position: relative;
+  top:-20px;
+  background-image:url('http://www.aacustomcrushing.com/wp-content/uploads/2014/03/Contact-us-background.jpg');
+  height: 400px;
+  color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-shadow: 0px -0px 18px black;
+  color: white;
+  font-size: 48px;  
+  font-family: 'ABeeZee';
+  font-weight: bold;
+}
+
+#more img{
+    position: relative;
+    top:-90px;
+    left: 380px;
+    width: 200px;
+    height: 200px;
+  -ms-transform: rotate(10deg); /* IE 9 */
+    -webkit-transform: rotate(10deg); /* Chrome, Safari, Opera */
+    transform: rotate(10deg);
+}
+
+#more p{
+  font-family: 'Inconsolata';
+  margin-left: 50px;
+  font-size: 20px;
+}
+
+#more h2{
+  text-align: center;
+  font-family: 'ABeeZee';
+}
+
+#more h3{
+  margin-left: 50px;
+}
