@@ -109,7 +109,7 @@
     color: white;
 }
 
-#about .top1 {
+#resume .top1 {
   position: relative;
   top:-130px;
   right: 130px;
@@ -127,7 +127,7 @@
   font-weight: bold;
 }
 
-#about .top2 {
+#resume .top2 {
   position: absolute;
   right: 460px;
   top: 480px;
@@ -137,7 +137,7 @@
 }
 
 
-#about {
+#resume {
   margin: 130px;
 }
 
@@ -152,7 +152,7 @@ padding: 20px;
 
 #explore h1{
   position: relative;
-  top:-20px;
+  top:-30px;
   background-image:url('https://preview.c9users.io/slydog123123/elisha_coad_website/pictures/Explore%20Background.jpg?_c9_id=livepreview3&_c9_host=https://ide.c9.io');
   height: 400px;
   color: white;
@@ -160,7 +160,7 @@ padding: 20px;
   background-size: cover;
   text-shadow: 5px -5px 8px black;
   color: white;
-  font-size: 58px;
+  font-size: 65px;
   font-family: 'Marck Script', cursive;
   font-weight: bold;
 }
