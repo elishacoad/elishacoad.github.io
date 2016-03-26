@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Maze - Lvl 1</title>
+</head>
+<body>
+<h1> Maze 1 </h1>
+  <p>Try to move your mouse through the maze without touching the walls.</p>
+  <p>Refresh the page to try again.</p>
+  
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.12/p5.js", "https://rawgit.com/jonleung/79234327a76b2eb4953e/raw/62bbd37c23950be576afac9d8f78112ec46445a2/p5.play.js">
+  	var maze;
+	var mazeImg;
+
+function setup() {
+ 	createCanvas(200,200);
+
+ 	maze = createSprite(100, 100);
+ 	mazeImg = loadImage("https://surrogate.hackedu.us/i.imgur.com/7xDfW51.png");
+ 	maze.addImage(mazeImg);
+}
+
+function draw() {
+  	background(255, 255, 255);
+ 	drawSprites();
+
+  	if(maze.overlapPixel(mouseX, mouseY)){
+    maze.remove();
+  }
+}
+setup();
+draw();
+</script>
+</body>
+</html>
