@@ -141,26 +141,16 @@
   margin: 130px;
 }
 
-#programmingclub .body{
+#explore .body{
 padding: 20px;
 }
 
-#programmingclub .body h2{
+#explore .body h2{
   text-align: center;
+  font-size: 30px;
 }
 
-#programmingclub .learn-more{
-  font-family: sans-serif;
-  font-size: 15px;
-  height: 380px;
-}
-
-#programmingclub .learn-more h2{
-  text-align: center;
-  font-family: 'Armata', sans-serif;
-}
-
-#programmingclub h1{
+#explore h1{
   position: relative;
   top:-20px;
   background-image:url('http://41.93.48.204/club/wp-content/uploads/2015/10/programming.jpg');
@@ -264,6 +254,9 @@ padding: 20px;
   margin-left: 50px;
 }
 
+#more .learn-more{
+  margin-bottom: -800px;
+}
 
 .totop{
   position: fixed;
