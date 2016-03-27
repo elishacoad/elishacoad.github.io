@@ -12,7 +12,7 @@
 }
 
 .jumbotron {
-  background-image:url('https://preview.c9users.io/slydog123123/elisha_coad_website/pictures/CityBackground.jpg');
+  background-image:url('pictures/CityBackground.jpg');
   height: 500px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -113,7 +113,7 @@
   position: relative;
   top:-130px;
   right: 130px;
-  background-image:url('https://preview.c9users.io/slydog123123/elisha_coad_website/pictures/Resume.jpg?_c9_id=livepreview7&_c9_host=https://ide.c9.io');
+  background-image:url('pictures/Resume.jpg');
   height: 400px;
   width: 1263px;
   color: white;
@@ -153,7 +153,7 @@ padding: 20px;
 #explore h1{
   position: relative;
   top:-20px;
-  background-image:url('https://preview.c9users.io/slydog123123/elisha_coad_website/pictures/Explore%20Background.jpg?_c9_id=livepreview3&_c9_host=https://ide.c9.io');
+  background-image:url('pictures/Explore%20Background.jpg');
   height: 400px;
   color: white;
   background-repeat: no-repeat;
@@ -168,7 +168,7 @@ padding: 20px;
 #games h1{
   position: relative;
   top:-20px;
-  background-image:url('https://preview.c9users.io/slydog123123/elisha_coad_website/pictures/Games%20From%20Code.jpg?_c9_id=livepreview5&_c9_host=https://ide.c9.io');
+  background-image:url('pictures/Games%20From%20Code.jpg');
   height: 400px;
   background-position: center;
   background-repeat: no-repeat;
@@ -215,7 +215,7 @@ padding: 20px;
 #more h1{
   position: relative;
   top:-20px;
-  background-image:url('https://preview.c9users.io/slydog123123/elisha_coad_website/pictures/Contact%20Us.jpg?_c9_id=livepreview6&_c9_host=https://ide.c9.io');
+  background-image:url('pictures/Contact%20Us.jpg');
   height: 400px;
   color: white;
   background-position: center;
