@@ -141,6 +141,15 @@
   margin: 130px;
 }
 
+#mysterybox {
+  position: absolute;
+  left: 0px;
+  top: 150px;
+  background-color: black;
+  height: 15px;
+  width: 15px;
+}
+
 #explore .body{
 padding: 20px;
 }
