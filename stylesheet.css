@@ -109,15 +109,23 @@
     color: white;
 }
 
-#resume .top1 {
+#explore h1{
+  top:-20px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-shadow: 5px -5px 8px black;
+  color: white;
+  font-size: 65px;
+  font-family: 'Marck Script', cursive;
+  font-weight: bold;
+}
+
+#resume h1 {
   position: relative;
-  top:-130px;
-  right: 130px;
+  top:-20px;
   background-image:url('pictures/Resume.jpg');
   height: 400px;
-  width: 1263px;
-  color: white;
-  background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
   text-shadow: 5px -5px 8px black;
@@ -125,20 +133,6 @@
   font-family: 'Revalia', serif;
   font-size: 48px;
   font-weight: bold;
-}
-
-#resume .top2 {
-  position: absolute;
-  right: 460px;
-  top: 480px;
-  font-family: 'Revalia', serif;
-  font-size: 48px;
-  font-weight: bold;
-}
-
-
-#resume {
-  margin: 130px;
 }
 
 #resume iframe {
@@ -170,7 +164,6 @@ padding: 20px;
   top:-20px;
   background-image:url('pictures/Explore%20Background.jpg');
   height: 400px;
-  color: white;
   background-repeat: no-repeat;
   background-size: cover;
   text-shadow: 5px -5px 8px black;
@@ -232,7 +225,6 @@ padding: 20px;
   top:-20px;
   background-image:url('pictures/Contact%20Us.jpg');
   height: 400px;
-  color: white;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
