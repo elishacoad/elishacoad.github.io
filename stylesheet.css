@@ -141,6 +141,12 @@
   margin: 130px;
 }
 
+#resume iframe {
+    text-align: center;
+    height: 1100px;
+    width: 850px;
+}
+
 #mysterybox {
   position: absolute;
   left: 0px;
