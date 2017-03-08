@@ -1,0 +1,81 @@
+.navbar .nav a {
+    cursor: pointer;
+}
+
+.banner {
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 120px;
+    padding-left: 80px;
+    margin-top: -20px;
+    color: white;
+    text-shadow: 2px 2px 8px rgb(50,50,50);
+    margin-bottom: 7vh;
+}
+
+.banner h1 {
+	font-size: 60px;
+	font-weight: bold;
+}
+
+.banner p {
+	font-size: 20px;
+}
+
+.themed-button {
+    background-color: rgb(210, 210, 210);
+    color: rgb(160, 160, 160);
+}
+
+.themed-button:hover {
+    background-color: rgb(120, 120, 120);
+    color: black;
+}
+
+.navbar-brand {
+    cursor: default;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    border-radius: 3px;
+}
+
+body {
+    font-family: 'Comfortaa', cursive !important;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+main {
+    display: none;
+}
+
+footer .container p{
+    font-size: 10px !important;
+    color: blue;
+}
+
+nav .container-fluid {
+	background-color: rgb(255, 255, 255);
+}
+
+nav .container-fluid .active a{
+	color: black;
+	cursor: default !important;
+}
+
+
+.footer {
+    background-color: rgb(247, 247, 247);
+    padding: 2vh;
+}
+
+.footer-text {
+    font-size: 12px;
+    text-align: right;
+}

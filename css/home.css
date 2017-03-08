@@ -1,0 +1,22 @@
+#main-banner {
+	background-image: url("../images/banners/city.jpg");
+    height: 500px;
+    padding-top: 120px;
+    color: black;
+}
+
+#main-banner h1{
+}
+
+#main-banner p{
+	text-shadow: 1px 1px 4px rgb(120,120,120);
+}
+
+#greeting-title {
+	text-align: center;
+}
+
+#greeting {
+	text-align: center;
+	padding-bottom: 10vh;
+}

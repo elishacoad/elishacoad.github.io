@@ -1,0 +1,29 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+.row img{
+	width: 100%;
+}
+
+#portfolio-banner {
+	background-image: url("../images/banners/map.jpg");
+}
+
+#resume {
+	margin-bottom: 10vh;
+}
+
+#footer {
+	background-color: rgb(247, 247, 247);
+	padding: 2vh;
+}
+
+#footer-text {
+	font-size: 12px;
+}
