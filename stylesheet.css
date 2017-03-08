@@ -112,19 +112,17 @@
 #resume .top1 {
   position: relative;
   top:-130px;
-  right: 130px;
   background-image:url('pictures/Resume.jpg');
   height: 400px;
-  width: 1263px;
-  color: white;
-  background-position: left;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
   text-shadow: 5px -5px 8px black;
   color: white;
   font-family: 'Revalia', serif;
   font-size: 48px;
   font-weight: bold;
+  background-size: cover !important;
+  background
 }
 
 #resume .top2 {
