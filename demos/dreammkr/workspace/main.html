@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>dreamMkr</title>
+
+		<link rel="shortcut icon" href="images/favicon.ico" type="imagSe/x-icon">
+		<!--http://hernansartorio.com/jquery-nice-select/-->
+		
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		
+		<!--Google Font-->
+	    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+		
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+		<!-- jQuery Downloaded -->
+		<script src="js/jquery.js"></script>
+
+		<!-- Latest compiled Bootstrap -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		<!-- Load the full Paper.js library -->
+		<script src="js/paper-full.js"></script>
+		
+		<!-- SweetAlert Library - http://t4t5.github.io/sweetalert/ -->
+		<script src="libraries/sweetalert/sweetalert.min.js"></script>
+    	<link rel="stylesheet" type="text/css" href="libraries/sweetalert/sweetalert.css">
+    	
+    	<!-- jQuery Rotate -->
+    	<script type="text/javascript" src="libraries/jQueryRotate.js"></script>
+		
+		<!-- Custom Files -->
+		<script type="text/javascript" src="mainscript.js"></script>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		
+        <!-- add dropdown Menu styles -->
+        <!--<link href="whirlingDropdownMenu/main.css" rel="stylesheet" type="text/css" />-->
+		
+		<!-- Josiah js -->
+		<script src="js/buttonFunc.js"></script>
+		<script src="js/pointManipulation.js"></script>
+		<script src="js/gridStuff.js"></script>
+		<script src="js/canvasMouseAction.js" type="text/paperscript" canvas="myCanvas"></script>
+		
+		<!--tooltip library - http://iamceege.github.io/tooltipster/ -->
+		<link rel="stylesheet" type="text/css" href="libraries/tooltipster/dist/css/tooltipster.bundle.min.css" />
+	    <script type="text/javascript" src="libraries/tooltipster/dist/js/tooltipster.bundle.min.js"></script>
+	    <link rel="stylesheet" type="text/css" href="libraries/tooltipster/dist/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-light.min.css" />
+	</head>
+
+
+
+
+	<body>
+		<!-- Navigation Bar -->
+		<nav class="navbar navbar-default navbar-fixed-top" id="navigation-bar">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a id="company" class="navbar-brand" href="http://continuouscomposites.com/" target="_blank"><img id="logoimg" src="images/logo2.png" width="40px"> Continuous Composites</a>
+				</div>
+				<ul class="nav navbar-nav navbar-right">
+					<!-- New Part and Download Part Buttons -->
+					<li><a><button class="btn quicklink" id="" onClick="newPartConfirm()">New Part &ensp;<span class="glyphicon glyphicon-plus"></span></button></a></li>
+					<li><a><button class="btn quicklink" id="">Upload Part &ensp;<span class="glyphicon glyphicon-open"></span></button></a></li>
+					<li><a><button class="btn quicklink" id="download">Download Part &ensp;<span class="glyphicon glyphicon-save"></span></button></a></li>
+					<li><a><button class="btn quicklink" id="" onClick="help()">Help &ensp;<span class="glyphicon glyphicon-question-sign"></span></button></a></li>
+				</ul>
+			</div>
+		</nav>
+		<!-- Main Body -->
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-1">
+					<div id="mySidenav" class="sidenav preset-shapes">
+						<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+						<a  class="preset-shape" id="words">Words</a>
+						<a  class="preset-shape" id="strip">Strip</a>
+						<a  class="preset-shape" id="vase">Vase</a>
+						<a  class="preset-shape" id="star">Star</a>
+						<a  class="preset-shape" id="polygon">Polygon</a>
+					</div>
+					<h3 id="dropdown" onclick="openNav()">&#9776;</span>
+				</div>
+				<div class="col-md-9">
+					<h1 id="part-name" contenteditable="true" align="center">My Part</h1>
+					<canvas id="myCanvas"></canvas>
+				</div>
+				<div class="col-md-2 jumbotron" id="right-col">
+					<div class="block well" id="block1">
+						<h4>Layers</h4>
+						<div id="glyph-container">
+								<a class="glyphicon glyphicon-trash" id="remove-sign" data-toggle="tooltip" data-placement="top" title="Delete selected layer" onclick="deleteConfirm()"></a>
+								<a class="glyphicon glyphicon-file" id="add-sign" data-toggle="tooltip" data-placement="top" title="Add a new layer" onclick="addListLayer()"></a>
+						</div>
+						<hr>
+						<div id="layer-list"></div>
+					</div>
+					<div class="block well" id="block2">
+						<h4 data-toggle="tooltip" data-placement="left" title="Real time">Part Results</h4>
+						<hr>
+						<dl>
+						<dt>Print Time:<span id="print-time">0:34 min</span></dt>
+						<dt>Material:<span id="material-used">45.2 in</span></dt>
+						<dt>Weight:<span id="weight">0.77 pd</span></dt>
+						<dt>Height:<span id="height">12 in</span></dt>
+						</dl>
+					</div>
+					<div class="block well" id="block3">
+						<h4>Layer Settings</h4>
+						<hr>
+						<dl>
+						<dt>Levels:<input type="text" name="levels" value=""></dt>
+						<dt data-toggle="tooltip" data-placement="left" title="Changes that accure level of layer">Level Mods</dt><hr id="level-mods">
+						<dd data-toggle="tooltip" data-placement="left" title="Value in degrees to turn per level">Rotation:<input type="text" name="rotation" value=""></dd>
+						<dd>Translation:<input type="text" name="translation" value=""></dd>
+						</dl>
+					</div>
+					<div class="block well" id="block4">
+						<h4>Part Settings</h4>
+						<hr>
+						<dl>
+							<dt data-toggle="tooltip" data-placement="left" title="How much machine moves up between levels">zStep:<input type="text" name="zstep" value=""></dt>
+							<dt>Sidestep:<input type="text" name="sidestep" value=""></dt>
+							<dt>Fiber:<button id="material-select" data-material="default" onClick="materialSelect()"><img src="images/three-dots.png"></button></dt>
+							<dt>Matrix:
+								<div class="dropdown">
+								<button onclick="matrixDropdownToggle()" class="dropbtn" id="matrix-button"></button>
+								<div id="matrix-dropdown" class="dropdown-content">
+								  <a>CPS 1020</a>
+								  <a>CPS 1025</a>
+								  <a>CPS 1040</a>
+								</div>
+								</div>
+							</dt>
+						</dl>
+					</div>
+					<div class="block well" id="block5">
+						<h4>Draw Settings</h4>
+						<hr>
+						<dl>
+							<dt><input type="checkbox" name="grid" value="grid" checked id="cb-grid"> <span class="checkbox-description">Grid:</span><input type="text" name="grid-size" value=".5" id="grid-size"></dt>
+							<dt><input type="checkbox" name="snap" value="snap" checked id="cb-snap"> <span class="checkbox-description">Snap</span></dt>
+							<dt><input type="checkbox" name="draw" value="draw" id="cb-draw"> <span class="checkbox-description">FreeStyle</span></dt>
+							<dt><input type="checkbox" name="cord" value="cord" id="cb-cord" hidden checked> <span hidden class="checkbox-description">Show Cord.</span></dt>
+						</dl>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
