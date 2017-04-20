@@ -1,0 +1,43 @@
+<!--
+ok so here is the plan
+3. break canvas up into 10 X 10
+4. allow user to add point to path through inputting
+5. allow user to edit last point by entering int the x, y feedback box
+-->
+
+<!--=========================================================================-->
+	<!--HTML-->
+<!--=========================================================================-->
+<html>
+<head>
+	<title>PaperJS - Starter Canvas</title>
+	<!--jQuery-->
+	<script src="js/jquery.js"></script>
+	<!-- Bootstrap! -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<!-- Bootstrap Offline! -->
+	<!--<link href="downloads/bootstrap.min.css" rel="stylesheet">-->
+	<!-- Load the full Paper.js library -->
+	<script src="js/paper-full.js"></script>
+	<!--dreamMkr js-->
+	<script src="js/buttonFunc.js"></script>
+	<script src="js/pointManipulation.js"></script>
+	<script src="js/gridStuff.js"></script>
+	<script src="js/canvasMouseAction.js" type="text/paperscript" canvas="myCanvas"></script>
+	<!-- CSS For Elements-->
+	<link href="css/style.css" rel='stylesheet' type='text/css'>
+</head>
+
+
+<body>
+	<button type="button" id="screenshotBtn" class="btn btn-primary">ScreenShot</button>
+	<button type="button" id="newlayerBtn" class="btn btn-primary">New Layer</button>
+	<button type="button" id="download" class="btn btn-primary">Download Part</button>
+	<button type="button" id="addgrid" class="btn btn-primary">Change Grid</button>
+	
+	<p id="cords"></p>
+	
+	<canvas id="myCanvas" style="border-style: solid; width:500px; height:500px;"></canvas>
+</body>
+</html>
