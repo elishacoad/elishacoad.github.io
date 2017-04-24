@@ -1,0 +1,17 @@
+#spotify-banner {
+    background-image: url("../images/banners/spotify.jpg");
+    background-position: 50%;
+}
+
+.playlist {
+	text-align: center;
+	background-color: rgb(40,40,40);
+	color: white;
+	border-radius: 5px 5px 0px 0px;
+	font-family: "Megrim";
+	cursor: default;
+}
+
+main {
+	margin-bottom: 70px;
+}

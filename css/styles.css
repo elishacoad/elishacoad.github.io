@@ -12,6 +12,7 @@
     color: white;
     text-shadow: 2px 2px 8px rgb(50,50,50);
     margin-bottom: 7vh;
+    cursor: default;
 }
 
 .banner h1 {

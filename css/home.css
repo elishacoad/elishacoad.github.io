@@ -14,9 +14,11 @@
 
 #greeting-title {
 	text-align: center;
+	font-size: 4vh;
 }
 
 #greeting {
 	text-align: center;
 	padding-bottom: 10vh;
+	font-size: 2.5vh;
 }
