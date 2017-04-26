@@ -1,24 +1,43 @@
 #main-banner {
-	background-image: url("../images/banners/city.jpg");
+    background-image: url("../images/banners/city.jpg");
     height: 500px;
     padding-top: 120px;
     color: black;
 }
 
-#main-banner h1{
-}
+#main-banner h1 {}
 
-#main-banner p{
-	text-shadow: 1px 1px 4px rgb(120,120,120);
+#main-banner p {
+    text-shadow: 1px 1px 4px rgb(120, 120, 120);
 }
 
 #greeting-title {
-	text-align: center;
-	font-size: 4vh;
+    text-align: center;
+    font-size: 4vh;
 }
 
 #greeting {
-	text-align: center;
-	padding-bottom: 10vh;
-	font-size: 2.5vh;
+    text-align: center;
+    padding-bottom: 10vh;
+    font-size: 2.5vh;
+}
+
+@media screen and (max-width: 481px) {
+    #main-banner {
+        height: 500px;
+        padding-top: 10px;
+        padding-left: 20px;
+        width: 100%;
+        color: black;
+    }
+    #main-banner h1 {}
+    #main-banner p {
+        text-shadow: 1px 1px 4px rgb(120, 120, 120);
+        width: 100%;
+        font-size: 2vh;
+    }
+
+    .tiles {
+
+    }
 }

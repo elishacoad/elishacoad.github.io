@@ -3,6 +3,19 @@
     background-position: 50%;
 }
 
-.tile h1 {}
+#error {
+	display: none;
+	margin-left: 10px;
+}
 
-.tile p {}
+@media screen and (max-width: 481px) {
+	.container {
+		display: none;
+	}
+	.footer {
+		margin-top: 80px;
+	}
+	#error {
+	display: block;
+}
+}

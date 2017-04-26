@@ -78,3 +78,22 @@ ___________________
 .tile:hover p {
     opacity: 1;
 }
+
+@media screen and (max-width: 481px) {
+	.tile img {
+    border-color: black;
+    opacity: 0.4;
+    transition: 0.6s;
+    -webkit-transition: 0.6s;
+}
+
+.tile h1 {
+    opacity: 1;
+    font-size: 6vh;
+}
+
+.tile p {
+    opacity: 1;
+    font-size: 3vh;
+}
+}

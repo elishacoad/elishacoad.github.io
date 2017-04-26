@@ -10,18 +10,18 @@
     padding-left: 80px;
     margin-top: -20px;
     color: white;
-    text-shadow: 2px 2px 8px rgb(50,50,50);
+    text-shadow: 2px 2px 8px rgb(50, 50, 50);
     margin-bottom: 7vh;
     cursor: default;
 }
 
 .banner h1 {
-	font-size: 60px;
-	font-weight: bold;
+    font-size: 60px;
+    font-weight: bold;
 }
 
 .banner p {
-	font-size: 20px;
+    font-size: 20px;
 }
 
 .themed-button {
@@ -56,20 +56,19 @@ main {
     display: none;
 }
 
-footer .container p{
+footer .container p {
     font-size: 10px !important;
     color: blue;
 }
 
 nav .container-fluid {
-	background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
 }
 
-nav .container-fluid .active a{
-	color: black;
-	cursor: default !important;
+nav .container-fluid .active a {
+    color: black;
+    cursor: default !important;
 }
-
 
 .footer {
     background-color: rgb(247, 247, 247);
@@ -79,4 +78,12 @@ nav .container-fluid .active a{
 .footer-text {
     font-size: 12px;
     text-align: right;
+}
+
+@media screen and (max-width: 481px) {
+    .banner {
+    padding-top: 120px;
+    padding-left: 10%;
+    margin-top: -20px;
+    }
 }

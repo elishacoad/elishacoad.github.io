@@ -10,3 +10,66 @@ html,body
 #portfolio-banner {
     background-image: url("../images/banners/explore.jpg");
 }
+
+#software {
+	margin-left: 27px;
+	height: 500px;
+}
+
+#programming {
+	margin-right: 27px;
+	height: 500px;
+}
+
+#hackclub {
+	margin-left: 27px;
+	height: 350px;
+}
+
+#reality {
+	margin-right: 27px;
+	height: 350px;
+}
+
+#resources {
+	margin-left: 27px;
+	height: 300px;
+}
+
+#misc {
+	margin-right: 27px;
+	height: 300px;
+}
+
+@media screen and (max-width: 481px) {
+	#software {
+	margin-left: 0px;
+	height: 640px;
+}
+
+#programming {
+	margin-right: 0px;
+	height: 680px;
+}
+
+#hackclub {
+	margin-left: 0px;
+	height: 370px;
+}
+
+#reality {
+	margin-right: 0px;
+	height: 450px;
+}
+
+#resources {
+	margin-left: 0px;
+	height: 340px;
+}
+
+#misc {
+	margin-right: 0px;
+	height: 280px;
+}
+
+}

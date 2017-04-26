@@ -27,3 +27,12 @@ html,body
 #footer-text {
 	font-size: 12px;
 }
+
+@media screen and (max-width: 481px) {
+	#resume-text {
+		padding-left: 4vh;
+	}
+	iframe {
+		height: 1800px;
+	}
+}
