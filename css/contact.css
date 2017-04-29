@@ -17,3 +17,7 @@
     transform: rotate(10deg);
     right: 10%;
 }
+
+iframe {
+    margin-left: 20px;
+}
