@@ -8,7 +8,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="../images/misc/favicon.ico" type="image/x-icon">
-    <meta name="google-site-verification" content="CWQMeaI6JQRlXcIdMKOTlkEIdN97QT48WY4woUPpRAc" />
 
     <!-- Sweet Alert Library -->
     <script src="../libraries/sweetalert/dist/sweetalert.min.js"></script>
@@ -27,10 +26,6 @@
     <!-- http://jqueryrotate.com/ -->
     <script type="text/javascript" src="../libraries/jqueryrotate.js"></script>
 
-    <!--Import materialize.css-->
-    <!-- <link type="text/css" rel="stylesheet" href="../libraries/materialize/css/materialize.min.css"  media="screen,projection"/> -->
-    <!-- <script type="text/javascript" src="../libraries/materialize/js/materialize.min.js"></script> -->
-
     <!-- Fancy Scroll Library -->
     <script src="../libraries/fancyscroll/jquery.fancy-scroll.min.js"></script>
 
@@ -46,9 +41,10 @@
 
     <!-- My Custom Files -->
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
-    <link rel="stylesheet" type="text/css" href="../css/home.css">
-    <script type="text/javascript" src="../javascript/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/demos.css">
+    <link rel="stylesheet" type="text/css" href="../css/twine.css">
     <link rel="stylesheet" type="text/css" href="../libraries/tiles/tiles.css">
+    <script type="text/javascript" src="../javascript/main.js"></script>
 </head>
 
 <body>
@@ -64,7 +60,7 @@
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="home.html">Home</a></li>
+                    <li><a href="home.html">Home</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
@@ -76,92 +72,73 @@
         </div>
     </nav>
     <main>
-        <div class="banner" id="main-banner">
-            <h1>Elisha Coad</h1>
-            <p>'Tis a pleasure to make your acquaintance</p>
+        <div class="banner" id="twine-banner">
+            <h1>Twine</h1>
         </div>
         <div class="container">
-            <h1 id="greeting-title">print ("Hello World!")</h1>
-            <p id="greeting">Hello! I am a programmer and designer who loves to play around with technology and build things. Feel free to take a look around my website!</p>
+        <p id="intro">Twine is free software where you can make your own interactive stories. It's great for both new and experienced programmers, and delivers directly to how much you put in. This course will take you through the basics to the most advanced techniques, and you'll be able to learn macros and HTML along the way. Have fun!</p>
+        <p id="disclaimer">(This course was originally from HackClub but has been modified to go more in-depth)</p>
+        <br>
             <div class="row">
                 <div class="col-md-4">
-                    <div class="tile">
-                        <a href="portfolio.html">
-                            <img src="../images/tiles/portfolio1.jpg" alt="Profile Picture">
+                    <div class="tile inactive">
+                        <a href="../twine/html/course1.html">
+                            <img src="../images/tiles/course1.jpg" alt="companion cube">
                             <div class="tile-description">
-                                <h1>Portfolio</h1>
-                                <p>Come and see what I've done</p>
+                                <h1>Course 1</h1>
+                                <p>Get started with the basics of Twine</p>
                             </div>
                         </a>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="tile">
-                        <a href="explore.html">
-                            <img src="../images/tiles/explore1.jpg" alt="Profile Picture">
+                <div class="col-md-8">
+                    <div class="tile inactive">
+                        <a href="../twine/html/course2.html">
+                            <img src="../images/tiles/course2.jpg" alt="companion cube">
                             <div class="tile-description">
-                                <h1>Explore</h1>
-                                <p>Find links to all the tech</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="tile">
-                        <a href="demos.html">
-                            <img src="../images/tiles/demos1.jpg" alt="Demos">
-                            <div class="tile-description">
-                                <h1>Demos</h1>
-                                <p>Play some games I've made</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="tile">
-                        <a href="quotes.html">
-                            <img src="../images/tiles/mountain.jpg" alt="Quotes">
-                            <div class="tile-description">
-                                <h1>Quotes</h1>
-                                <p>I love making quotes, come see a few of them</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="tile">
-                        <a href="spotify.html">
-                            <img src="../images/tiles/spotify.jpg" alt="Spotify">
-                            <div class="tile-description">
-                                <h1>Spotify</h1>
-                                <p>Listen to some of my playlists</p>
+                                <h1>Course 2</h1>
+                                <p>Find out how to implement code into your story</p>
                             </div>
                         </a>
                     </div>
                 </div>
                 <div class="col-md-12">
-                    <div class="tile">
-                        <a href="twine.html">
-                            <img src="../images/tiles/twine3.jpg" alt="Twine">
+                    <div class="tile inactive">
+                        <a href="../twine/html/course3.html">
+                            <img src="../images/tiles/course3.jpg" alt="8-Bit RPG">
                             <div class="tile-description">
-                                <h1>Twine Workshop</h1>
-                                <p>Learn programming through this free storytelling software</p>
+                                <h1>Course 3</h1>
+                                <p>Learn some of the more advanced techniques available</p>
                             </div>
                         </a>
                     </div>
                 </div>
-                <div class="col-md-12">
+                <div class="col-md-8">
+                    <div class="tile inactive">
+                    <a href="../twine/html/capstone.html">
+                        <img src="../images/tiles/capstone.jpg" alt="ImgFltr">
+                        <div class="tile-description">
+                            <h1>Capstone Project</h1>
+                            <p>Time for the course capstone project to show what you've learned!</p>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
                     <div class="tile">
-                        <a href="contact.html">
-                            <img src="../images/tiles/contact3.jpg" alt="Contact">
+                        <a href="https://workshops.hackclub.com">
+                            <img src="../images/tiles/hackclub.png" target="_blank" alt="hackclub">
                             <div class="tile-description">
-                                <h1>Contact Me</h1>
-                                <p>I'd love to hear from you!</p>
+                                <h1>Hack Club</h1>
+                                <p>Check out some other workshops from Hack Club</p>
                             </div>
                         </a>
                     </div>
                 </div>
             </div>
+        </div>
+        <div id="error">
+            <h3>I'm sorry, this content is not available with your current screen size.</h3>
         </div>
     </main>
     <div class="footer">
