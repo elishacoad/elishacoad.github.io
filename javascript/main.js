@@ -1,6 +1,8 @@
 $(document).ready(function() {
-    window.sr = ScrollReveal();
-    sr.reveal('.tile', { duration: 1000 }, 500);
+
+    // window.sr = ScrollReveal();
+    // sr.reveal('.tile', { duration: 1200, reset: true});
+    //Included in tiles.js
 
     $(".slight-tilt").rotate({
         bind: {

@@ -1,0 +1,1171 @@
+<tw-storydata name="Knights of Candenbarry" startnode="1" creator="Twine" creator-version="2.0.11" ifid="9645CB01-1638-4808-B39B-4FDCBDA45609" format="Harlowe" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Intro" tags="" position="674,333">Candenbarry was the most peacful nation in the land. They were the peacmakers, and they owed it all to their heroic spirits: the Hollows. Unfortunately, a day came when the Paranobles attacked the Hollows, leaving the Candenbarrians without guardians. It is now up to Candenbarry&#39;s brave knights to rescue the Hollows and restore peace to the land. You have 10 people on your squad. First, pick a weapon.
+[[Sword]]
+[[Mace]]
+[[Magic Bow]]
+[[Lance]]
+(set: $Soldier to 10)
+
+Sorry that the game is incomplete, the bow and lance don&#39;t have endings. We hope to add more later after the competition. Have fun with what&#39;s done!</tw-passagedata>
+<tw-passagedata pid="2" name="Sword" tags="" position="674.0001,208">The sword is a very sharp and is great for fighting unarmored opponents. This is a very light weapon that can be used for more than one purpose.
+[[Okay]] </tw-passagedata>
+<tw-passagedata pid="3" name="Mace" tags="" position="549.0001,334">You chose the mace. This is a very heavy weapon that makes you quite slow. However, it comes in handy when in close up battle and is great for penitrating/ crushing armor.
+[[Okay]]</tw-passagedata>
+<tw-passagedata pid="4" name="Magic Bow" tags="" position="799.0001,334">The magic bow was enchanted by the Hollows and has near perfect aim due to connection to your soul. It is very long ranged and quite strong against unarmored enemies. Unfortunately, it&#39;s quite heavy due to the arrows carried on your back and the strong wood of the bow.
+[[Okay]] </tw-passagedata>
+<tw-passagedata pid="5" name="Lance" tags="" position="678,460">The lance is a weapon that combat enemies from afar that cannot penitrate armor easily without breaking itself. While it&#39;s not light, it&#39;s not exactly heavy.
+[[Okay]] </tw-passagedata>
+<tw-passagedata pid="6" name="Okay" tags="" position="549,460">You venture out of your barracks with your fellow knights. It isn&#39;t long before you all encounter a team of weaker Paranobles, an easy first target. What weapon did you pick?
+[[The Sword]]
+[[The Bow]]
+[[The Mace]]
+[[The Lance]]</tw-passagedata>
+<tw-passagedata pid="7" name="The Sword" tags="" position="550.0001,585">How do you attack?
+[[Stab Several]]
+[[Spin Attack]]
+[[Take a Few Swings]]
+[[Stay in Formation and Let Them Come to You]]</tw-passagedata>
+<tw-passagedata pid="8" name="The Bow" tags="" position="681.0002,586">How do you attack?
+[[Shoot Them]]</tw-passagedata>
+<tw-passagedata pid="9" name="The Mace" tags="" position="806.0001,459">How do you attack?
+[[Swing High]]
+[[Swing Low]]
+[[Stand Your Ground]]</tw-passagedata>
+<tw-passagedata pid="10" name="The Lance" tags="" position="806.0003999999999,584">How do you attack?
+[[Stab]]
+[[Charge]]
+[[Defend]]
+[[Swing From a Distance]]</tw-passagedata>
+<tw-passagedata pid="11" name="Stab Several" tags="" position="553,710">Aiming low causes the Paranobles to be surprised, and they retreat, killing 1 soldier.
+[[Next]] 
+(set: $Soldier To 9)</tw-passagedata>
+<tw-passagedata pid="12" name="Spin Attack" tags="" position="425.00019999999995,586">You decided to spin to take out some Paranobles. Unfortunately, this causes you to knock down your teammates, which makes the Paranobles kill the fallen and overpower the remaining standing. You no longer have a team. Without a team, no one can defend you, and the Paranobles kill you.
+[[Game Over]]</tw-passagedata>
+<tw-passagedata pid="13" name="Take a Few Swings" tags="" position="426,711">Several Paranobles are killed, but unfortunately, you accidentally hit a few teammates. This causes Paranobles to kill them. -2 teammates.
+[[Next]] 
+(set: $Soldier To 8)</tw-passagedata>
+<tw-passagedata pid="14" name="Stay in Formation and Let Them Come to You" tags="" position="424.0001,459">Everything goes as planned and the Paranobles fall to your squad. You&#39;ve lost no men, and you all continue into the forest, rallied by your victory.
+[[Next]] </tw-passagedata>
+<tw-passagedata pid="15" name="Game Over" tags="" position="424.0003999999999,334">[[Return to Paranoble Raiders]]</tw-passagedata>
+<tw-passagedata pid="16" name="Swing High" tags="" position="933.0001,459">You don&#39;t hit any Paranobles, but don&#39;t hit any teammates. With you not paying attention, your team makes more effort, which is more energy. You are victorious, but exhausted.
+[[Next]] </tw-passagedata>
+<tw-passagedata pid="17" name="Swing Low" tags="" position="931.0002999999999,584">You hit as many Paranobles as possible, but also 1 teammate, who is killed by Paranobles. You still won the battle, and you are advancing toward the forest.
+[[Next]] 
+(set: $Soldier To 9)</tw-passagedata>
+<tw-passagedata pid="18" name="Stand Your Ground" tags="" position="932.0001,334">Everything goes as planned, you dare the Paranobles to charge your squad. When they do, you defeat them easily. Your victory is well earned! You make your way to the forest.
+[[Next]] </tw-passagedata>
+<tw-passagedata pid="19" name="Stab" tags="" position="810.0001,709">You are still close enough to take out so many Paranobles with your lance, so this is incredibly efficient! You manage to make your way to the forest easily!
+[[Next]] </tw-passagedata>
+<tw-passagedata pid="20" name="Charge" tags="" position="681,711">You knock out a few Paranobles, but it seems like there are still more for your team to beat up, and it&#39;s just a few too many. -2 soldiers. You still begin to make your way to the forest.
+[[Next]] 
+(set: $Soldier To 8)</tw-passagedata>
+<tw-passagedata pid="21" name="Defend" tags="" position="935.0003999999999,709">Lances aren&#39;t made for defending, so you didn&#39;t pick very well. You die because of your mistakes, and they get your team killed.
+[[Game Over]] </tw-passagedata>
+<tw-passagedata pid="22" name="Swing From a Distance" tags="" position="1060.0005999999998,709">While this doesn&#39;t work badly, it doesn&#39;t work very well either. Your team is exhausted due to having to do more work to subsitute you. You still make it to the forest.
+[[Next]] </tw-passagedata>
+<tw-passagedata pid="23" name="Return to Paranoble Raiders" tags="" position="424.0002999999999,208">[[Okay]]</tw-passagedata>
+<tw-passagedata pid="24" name="Shoot Them" tags="" position="1056.0004999999999,584">You did all you could, and it wasn&#39;t bad. It wasn&#39;t very good, either. -1 soldier.
+[[Next]] 
+(set: $Soldier To 9)</tw-passagedata>
+<tw-passagedata pid="25" name="Next" tags="" position="299,587">Your team arrives at the forest, where they must get through and make it to the lake. There, there&#39;s a rendevou that will bring them to the Paranoble&#39;s Tower, where you can free the Hollows. In your path you encounter a Paranoble Checkpoint, where they set up camp. How do you attack?
+[[Surround the Checkpoint]]
+[[Sneak in and Take Them Out]]
+[[Charge In]]</tw-passagedata>
+<tw-passagedata pid="26" name="Surround the Checkpoint" tags="" position="301,712">&quot;Die, that was a horrible idea.&quot;
+-Uncredited Paranoble #30
+
+Those were the last words you heard before your entire squad was killed.
+[[Game Over]] </tw-passagedata>
+<tw-passagedata pid="27" name="Sneak in and Take Them Out" tags="" position="174.0002,583">(if: $Soldier is (either: 9,8))[You successfully sneak in and kill them in their sleep with no loses and and you have freed a solider in the prosses. [[Awesome!]](set: $Soldier to $Soldier +1) ]
+(else-if: $Solider is (either: 10)) [You make too much nosie comming in and the ParaNobles kill one of your Soldiers. -1 Soldier. [[Awesome!]] (set: $Soldier to 9)]</tw-passagedata>
+<tw-passagedata pid="28" name="Charge In" tags="" position="299.00019999999995,461">(if: $Soldier is (either: 9,8))[You didnt have enogh when soldiers you got in the checkpoint and were killed [[Game Over]]  ]
+(else-if: $Soldier is 10)[You successfully defeat the camp full of Paranobles adding 30 kills to your streak. But you lose 1 soldier. (set: $Soldier To 8) [[Awesome!]] ]</tw-passagedata>
+<tw-passagedata pid="29" name="Awesome!" tags="" position="169,458">Your team makes it to the lake rendevous, but it gets crashed by a massive dragon! What weapon did you choose?
+[[That Sword]]
+[[That Mace]]
+[[That Bow]]
+[[That Lance]]</tw-passagedata>
+<tw-passagedata pid="30" name="That Sword" tags="" position="44.0001,456">How do you fight the dragon?
+[[Deflect Fire]]
+[[Slash at the Claws]]
+[[Stab Mouth]]</tw-passagedata>
+<tw-passagedata pid="31" name="That Mace" tags="" position="299.0001,336">How do you fight the dragon?</tw-passagedata>
+<tw-passagedata pid="32" name="That Bow" tags="" position="168.0002,331">How do you fight the dragon?
+[[Shoot It&#39;s Scales]]
+[[Use a Water Arrow to the Mouth]]
+[[Shoot It&#39;s Eyes]]</tw-passagedata>
+<tw-passagedata pid="33" name="That Lance" tags="" position="44,581">How do you fight the dragon?</tw-passagedata>
+<tw-passagedata pid="34" name="Shoot It&#39;s Scales" tags="" position="299.0002999999999,209">This is ineffective since it&#39;s scales are impervious to arrows. -4 teammates.
+[[Oh]]</tw-passagedata>
+<tw-passagedata pid="35" name="Use a Water Arrow to the Mouth" tags="" position="174.00009999999997,206">The arrow works, scaring the dragon away with nothing to defend itself. Everyone lived and your team is on their way to the Paranoble Tower.
+[[Oh]]</tw-passagedata>
+<tw-passagedata pid="36" name="Shoot It&#39;s Eyes" tags="" position="49.000099999999975,206">This is very effective and takes out the dragon. Unfortuantely, the backlash from the dragons fall kills 1 teammate.
+[[Oh]]</tw-passagedata>
+<tw-passagedata pid="37" name="Oh" tags="" position="43.00040000000001,331">You were transported to the Paranoble Tower and must enter it unseen. How do you proceed?
+[[Climb the Wall]]
+[[Bust In]]
+[[Sneak in at Night]]</tw-passagedata>
+<tw-passagedata pid="38" name="Deflect Fire" tags="" position="175,713">Double-click this passage to edit it.</tw-passagedata>
+<tw-passagedata pid="39" name="Slash at the Claws" tags="" position="37.0001,706">Double-click this passage to edit it.</tw-passagedata>
+<tw-passagedata pid="40" name="Stab Mouth" tags="" position="42.0001,831">This is quite licky, imbuing the sword with the power of the Dragon&#39;s Flame!
+[[Oh]]</tw-passagedata>
+<tw-passagedata pid="41" name="Climb the Wall" tags="" position="549.0003999999999,209">Double-click this passage to edit it.</tw-passagedata>
+<tw-passagedata pid="42" name="Bust In" tags="" position="924.0002,209">Did you really think that would work? You lost 4 soldiers on your way up.
+[[Move On]]</tw-passagedata>
+<tw-passagedata pid="43" name="Sneak in at Night" tags="" position="799.0001,205">Double-click this passage to edit it.</tw-passagedata>
+<tw-passagedata pid="44" name="Move On" tags="" position="1049.0005999999998,209">What weapon did you pick?
+[[My Sword]]
+[[My Bow]]
+[[My Mace]]
+[[My Lance]]</tw-passagedata>
+<tw-passagedata pid="45" name="My Sword" tags="" position="1057.0001,334">Did you stab the dragon&#39;s mouth?
+[[Yes]]
+[[No]]</tw-passagedata>
+<tw-passagedata pid="46" name="My Bow" tags="" position="1060,459">Double-click this passage to edit it.</tw-passagedata>
+<tw-passagedata pid="47" name="My Mace" tags="" position="1174.0006999999998,208.33333333333334">How will you attack the Queen?.
+[[Charge and swing]]
+[[aim for her weapon]]
+[[Surround her and kiil her]]</tw-passagedata>
+<tw-passagedata pid="48" name="My Lance" tags="" position="1182.0001,334">Double-click this passage to edit it.</tw-passagedata>
+<tw-passagedata pid="49" name="Yes" tags="" position="1189.0001,584">What is your next course of action to defeat the Queen Paranoble?
+[[Flame Swing]]
+[[Fire Ball]]
+[[Super Stab]]</tw-passagedata>
+<tw-passagedata pid="50" name="No" tags="" position="1186.6667666666667,459">What do you do to defeat the Paranoble Queen?
+[[Swing]]
+[[Stab The Queen]]
+[[Mega Thrust]]</tw-passagedata>
+<tw-passagedata pid="51" name="Flame Swing" tags="" position="1185.0007999999998,709">This is able to take out the Queen, but she has reenforcments to protect the cell holding the Hollows. What do you do to beat them and save Cadenbarry?</tw-passagedata>
+<tw-passagedata pid="52" name="Fire Ball" tags="" position="1186.6667666666667,834">This is able to take out the Queen, but she has reenforcments to protect the cell holding the Hollows. What do you do to beat them and save Cadenbarry?</tw-passagedata>
+<tw-passagedata pid="53" name="Super Stab" tags="" position="1046.6667666666667,834">Almost did it, but not quite. She killed you.
+[[Game Over]] </tw-passagedata>
+<tw-passagedata pid="54" name="Swing" tags="" position="921.6669666666667,834">Something so simple couldn&#39;t beat the Paranoble Queen!
+[[Game Over]]</tw-passagedata>
+<tw-passagedata pid="55" name="Mega Thrust" tags="" position="796.6672666666666,836">This is able to take out the Queen, but she has reenforcments to protect the cell holding the Hollows. What do you do to beat them and save Cadenbarry?</tw-passagedata>
+<tw-passagedata pid="56" name="Stab The Queen" tags="" position="671.6674666666665,836">Something so simple couldn&#39;t beat the Paranoble Queen.
+[[Game Over]] </tw-passagedata>
+<tw-passagedata pid="57" name="Credits" tags="" position="423.3335333333333,837">Writers: Robbie Champagne and Taige
+Story By: Robbie, Kirill, and Taige
+GIZMO 4 LYFE
+Sorry that the game is incomplete, the bow and lance don&#39;t have endings. We hope to add more later after the competition. Have fun with what&#39;s done!</tw-passagedata>
+<tw-passagedata pid="58" name="You Win!" tags="" position="548.3338333333332,835">Congrats! You beat the game! Click &quot;Game Over&quot; to replay anything and if you want, click &quot;Credits&quot;.
+
+[[Game Over]] 
+[[Credits]] </tw-passagedata>
+<tw-passagedata pid="59" name="Charge and swing" tags="" position="1498.3333333333335,221.66666666666669">You land the first hit, but she strikes the cain seperrating your mance and you die
+[[Game Over]] </tw-passagedata>
+<tw-passagedata pid="60" name="aim for her weapon" tags="" position="1324.0006999999998,358.33333333333337">Double-click this passage to edit it.</tw-passagedata>
+<tw-passagedata pid="61" name="Surround her and kiil her" tags="" position="1345,218.33333333333334">Double-click this passage to edit it.</tw-passagedata>
+</tw-storydata>
+
+
+<tw-storydata name="Prototype 1" startnode="52" creator="Twine" creator-version="2.0.11" ifid="B1CA9EAB-24D6-4198-8A6B-A29A48ED41EA" format="Harlowe" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url(https://fonts.googleapis.com/css?family=Amatic+SC:700);
+
+tw-passage
+{
+	font-family: 'Amatic SC', cursive;
+}
+
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
+</script><tw-passagedata pid="1" name="Start" tags="" position="408,0">Everything is dark. Something is definately wrong, but there&#39;s no way to tell what. There&#39;s suddenly a ray of light, with some kind of strange creature. &quot;Good riddance,&quot; it says. The light went away, as well as the strange creature. The room gains slight illumination. It&#39;s a completely empty, white room, nothing there but a door. What do you do?
+[[Open the Door]] </tw-passagedata>
+<tw-passagedata pid="2" name="Open the Door" tags="" position="407.0001,125">The other side of the door isn&#39;t much different. It&#39;s a forked hall, though. 
+[[Main Hall]] 
+[[Go Right]] 
+[[Go Left]] </tw-passagedata>
+<tw-passagedata pid="3" name="Main Hall" tags="" position="1161.0003,127">You went down the main hall to find some kind of strange giant worm. No, this clearly wasn&#39;t a worm. It was an atrocity. Unfortunately, it&#39;s attacking you. &quot;Fight the Weakling,&quot; a voice says, &quot;fight it or you will be declared too weak to live.&quot; There&#39;s only one way to beat this &#39;Weakling&#39;, so you&#39;d better pick wisely...
+[[Kick It]] 
+[[Punch It&#39;s Eye]]
+[[Run Back to the Room]]
+&lt;img src=&quot;http://cdn.bulbagarden.net/upload/thumb/5/5d/010Caterpie.png/250px-010Caterpie.png&quot; alt=Worm Creature (Weakling)&gt;</tw-passagedata>
+<tw-passagedata pid="4" name="Kick It" tags="Try-Again" position="1036.0001,128">Really? You couldn&#39;t beat a weakling? It has &#39;weak&#39; in the name!
+[[The End]]</tw-passagedata>
+<tw-passagedata pid="5" name="Go Right" tags="" position="532,125">This seems to be a lab, not sure what for, but that doesn&#39;t matter. There is a humanoid creature sitting in a chair, blocking your way. He has a massive head, and claims that he&#39;s called &#39;The Professor&#39;. You must win his trivia game to pass, and if you cheat, you may be sentenced to death in the facility.
+[[Open the Door]] 
+[[Accept Trivia]]</tw-passagedata>
+<tw-passagedata pid="6" name="Go Left" tags="" position="282,125">Dead End.
+[[Open the Door]] </tw-passagedata>
+<tw-passagedata pid="7" name="Punch It&#39;s Eye" tags="" position="1157.0011999999997,253">That seems to do it, it just shrivled up and died. You monster, you killed a defensless creature. Shame on you. On the happier side, the door opened. You enter a giant dome made of glass, nothing is in it but an Old Hag. A thundering voice says &quot;Select your opponent, or let I choose for you!&quot; It seems that this dome may be an arena of war...
+[[Talk to the Old Hag]]
+[[Try to Break the Glass]]
+[[Request an Opponent]]</tw-passagedata>
+<tw-passagedata pid="8" name="Run Back to the Room" tags="" position="150,253">The door behind you is locked, you have to fight.
+[[Main Hall]] </tw-passagedata>
+<tw-passagedata pid="9" name="Talk to the Old Hag" tags="" position="1032.0009999999997,253">&#39;&#39;Old Hag&#39;&#39;: Well, well, what&#39;s young meat like you doing in a prison like this?.. Well? Okay, you&#39;re not much of a talker. Do you know how long I&#39;ve been in this place? Neither do I. It&#39;s been too long. All I know is that that monster, Proto, put us in here. Why? Beats me.
+[[Ask About Proto]]
+[[Return]]</tw-passagedata>
+<tw-passagedata pid="10" name="Try to Break the Glass" tags="" position="142,378">It&#39;s unbreakable by human force.
+[[Return]] </tw-passagedata>
+<tw-passagedata pid="11" name="Request an Opponent" tags="" position="139,503">[[Litch]]
+[[Monger]]
+[[Totem]]</tw-passagedata>
+<tw-passagedata pid="12" name="Ask About Proto" tags="" position="1044.0002,378">&#39;&#39;Old Hag&#39;&#39;: Why, you haven&#39;t heard of Proto? You&#39;re on of the lucky ones. Proto was a science experiment initially, but he got a little out of hand. They built him a simulated world where he could control everything, but he wanted more. After that, they started sending people inside the world to keep Proto at bay. At any moment, he can change the world from a lushus green meadow to a concrete jungle. He controls our lives now, it&#39;s out of our hands.
+&#39;&#39;You&#39;&#39;: What if Proto was the creature that threw me in the room?
+[[Return]] </tw-passagedata>
+<tw-passagedata pid="13" name="Return" tags="" position="1169.0004999999999,378">[[Request an Opponent]]
+[[Talk to the Old Hag]] 
+[[Try to Break the Glass]] </tw-passagedata>
+<tw-passagedata pid="14" name="Litch" tags="" position="292,500">Pick Again.
+[[Monger]] 
+[[Totem]] </tw-passagedata>
+<tw-passagedata pid="15" name="Monger" tags="" position="291,375">Pick Again.
+[[Litch]] 
+[[Totem]] </tw-passagedata>
+<tw-passagedata pid="16" name="Totem" tags="" position="282,250">Fight the Totem!
+[[Kick]]
+[[Punch]]
+[[Random Flamethrower]]
+
+&lt;img src=&quot;https://userscontent2.emaze.com/images/27159884-b798-4fad-9cbf-17c2d1c6ab3a/f95d56fb-815c-4500-91a8-c8172d799a7f.png&quot; Width= 350 alt=Totem&gt;
+Hint: He&#39;s made of wood.</tw-passagedata>
+<tw-passagedata pid="17" name="Kick" tags="" position="408,250">[[Punch]] 
+[[Kick]] 
+[[Random Flamethrower]] </tw-passagedata>
+<tw-passagedata pid="18" name="Punch" tags="" position="657,127">[[Punch]] 
+[[Kick]] 
+[[Random Flamethrower]] </tw-passagedata>
+<tw-passagedata pid="19" name="Random Flamethrower" tags="" position="783,128">The Totem is dead! Take it&#39;s top head as a trophy!
+[[Take Head]]</tw-passagedata>
+<tw-passagedata pid="20" name="Accept Trivia" tags="" position="533,0">1: When did Marty and Doc go when they went to the future in &quot;Back to the Future Part 2&quot;?
+[2016]&lt;2016|
+[[2015]]
+[2055]&lt;2055|
+[1999]&lt;1999|
+
+(click: ?2016)[Wrong.]
+(click: ?1999)[Wrong.]
+(click: ?2055)[Wrong.]</tw-passagedata>
+<tw-passagedata pid="21" name="2016" tags="" position="283,0">Wrong.</tw-passagedata>
+<tw-passagedata pid="22" name="2015" tags="" position="908,3">Correct!
+2: How many movies has James Bond officially appeared in?
+[[24]]
+[26]&lt;26|
+[30]&lt;30|
+[18]&lt;18|
+
+(click: ?26)[Wrong.]
+(click: ?30)[Wrong.]
+(click: ?18)[Wrong.]</tw-passagedata>
+<tw-passagedata pid="23" name="24" tags="" position="783.0002,3">Correct!
+3: What relation does Kylo Ren have to Luke Skywalker in &quot;Star Wars: The Force Awakens&quot;?
+[He is Luke&#39;s Grandson]&lt;HeIsLukesGrandson|
+[[He&#39;s Luke&#39;s Nephew]]
+[He&#39;s Luke&#39;s Real Father]&lt;HesLukesRealFather|
+[Luke is His Father]&lt;LukeIsHisFather|
+
+(click: ?HeIsLukesGrandson)[Wrong.]
+(click: ?HesLukesRealFather)[Wrong.]
+(click: ?LukeIsHisFather)[Wrong.]</tw-passagedata>
+<tw-passagedata pid="24" name="He&#39;s Luke&#39;s Nephew" tags="" position="658,0">Correct! The man gets up and let&#39;s you pass, for you have won the game fair and square. You progress to the [[Main Hall]] .</tw-passagedata>
+<tw-passagedata pid="25" name="Take Head" tags="" position="532,250">A figure appeared from a newly opened hole in the Dome, the shape seemed familiar. &quot;So, it seems that you have bested my Totem. Maybe you&#39;re stronger than I thought...&quot; You&#39;re confused. &quot;What, do you not know me? I am Proto! Ruler of this world, your new king! You play by my rules or you die!&quot; This wouldn&#39;t be good...
+[[Challenge Proto]]
+[[Listen to His Monologue]]</tw-passagedata>
+<tw-passagedata pid="26" name="Challenge Proto" tags="" position="657.0002,252">&quot;You, fight me? Don&#39;t be ridiculous. It wouldn&#39;t be a fair fight. I&#39;d rather see something more entertaining! S.K.I.T.T! It&#39;s time...&quot; Proto said. A large robot lowered through the hole, armed with lasers and armor plates! Guess you&#39;d better beat it, who knows what it&#39;ll do to you if you don&#39;t...
+[[Flamethrower]]
+[[Totem Head]]
+[[Dodge]]
+&lt;img src=&quot;https://image-gr.s3.envato.com/files/15791388/angry_robot_590.jpg&quot; width=300px alt=&quot;S.K.I.T.T.&quot;&gt;</tw-passagedata>
+<tw-passagedata pid="27" name="Listen to His Monologue" tags="" position="782.0004999999999,253">&quot;So without further ado, I give you: S.K.I.T.T!&quot;
+A giant robot with lasers and incredible armor plating shows up out of the hole in the dome! Fight it!
+[[Flamethrower]] 
+[[Totem Head]] 
+[[Dodge]] 
+&lt;img src=&quot;https://image-gr.s3.envato.com/files/15791388/angry_robot_590.jpg&quot; width=300px alt=&quot;S.K.I.T.T.&quot;&gt;</tw-passagedata>
+<tw-passagedata pid="28" name="Flamethrower" tags="" position="417,376">&lt;img src=&quot;https://image-gr.s3.envato.com/files/15791388/angry_robot_590.jpg&quot; width=300px alt=&quot;S.K.I.T.T.&quot;&gt;
+[[Flamethrower]] 
+[[Totem Head]] 
+[[Dodge]] </tw-passagedata>
+<tw-passagedata pid="29" name="Totem Head" tags="" position="542,379">&quot;O NO! TOTEM HEDS R MEH WEEKNESS! O DA LITE! I C DA LITE!&quot; S.K.I.T.T. said. You feel pity for him, it&#39;s not like he&#39;s smart. He can&#39;t even spell right when his text box is speaking!
+[[Recruit S.K.I.T.T.]]
+[[Show No Mercy]]</tw-passagedata>
+<tw-passagedata pid="30" name="Dodge" tags="" position="667.0002,377">&lt;img src=&quot;https://image-gr.s3.envato.com/files/15791388/angry_robot_590.jpg&quot; width=300px alt=&quot;S.K.I.T.T.&quot;&gt;
+[[Flamethrower]] 
+[[Totem Head]] 
+[[Dodge]] </tw-passagedata>
+<tw-passagedata pid="31" name="Recruit S.K.I.T.T." tags="" position="542.0003999999999,504">Excellent choice!
+&#39;&#39;Proto&#39;&#39;: No! You will not use MY creation in MY world to destroy ME! I will never let that happen!
+Proto hit both you and S.K.I.T.T. with a crazy shock, and you woke up in the worst possible place: back where you started.
+[[Rats!]]</tw-passagedata>
+<tw-passagedata pid="32" name="Show No Mercy" tags="" position="667.0004999999999,502">But he&#39;s so helpless and cute!
+[[Recruit S.K.I.T.T.]] 
+[[Show No Mercy]] </tw-passagedata>
+<tw-passagedata pid="33" name="Rats!" tags="" position="417.00019999999995,501">[[Go Down the Main Hall]]
+[[Right]]
+[[Left]]</tw-passagedata>
+<tw-passagedata pid="34" name="Go Down the Main Hall" tags="" position="919.0001,379">You&#39;re back in the dome. Nothing here, any more. Unfortunately, there&#39;s now a giant evil tower on the other side of the glass. There is no longer an old lady...
+[[Talk to the Skeleton]]
+[[Break the Glass]]</tw-passagedata>
+<tw-passagedata pid="35" name="Right" tags="" position="917.0013999999996,505">Dead End.
+[[Rats!]] </tw-passagedata>
+<tw-passagedata pid="36" name="Left" tags="" position="794,380">Dead end.
+[[Rats!]] </tw-passagedata>
+<tw-passagedata pid="37" name="Talk to the Skeleton" tags="" position="907.0007999999998,253">&#39;&#39;Skeleton&#39;&#39;: Oh, hello there. You probably don&#39;t recognize me. We talked earlier, but then I was living! Sorry if I startled you. Anyway, I wanna take down that Proto! He ruined my life! When I still had one, of course. Bring me with you!
+[[Recruit Skel]]
+[[Reject Skel]]</tw-passagedata>
+<tw-passagedata pid="38" name="Break the Glass" tags="" position="1174.0001,503">The glass is unbreakable by human force.
+[[Next]]</tw-passagedata>
+<tw-passagedata pid="39" name="Next" tags="" position="289,625">By &#39;&#39;human&#39;&#39; force! S.K.I.T.T. breaks the glass.
+[[Yeah!]]</tw-passagedata>
+<tw-passagedata pid="40" name="Yeah!" tags="" position="135,628">Did you recruit Skel?
+[[Yep]]
+[[Nope]]</tw-passagedata>
+<tw-passagedata pid="41" name="Recruit Skel" tags="" position="1049,503">Oh, goodness! This is the most exciting thing I&#39;ve done since I died by the hands of my enemy!
+[[Okay]]</tw-passagedata>
+<tw-passagedata pid="42" name="Reject Skel" tags="" position="792.0010999999997,505">&#39;&#39;Skel&#39;&#39;: Oh, well okay then. That makes me sad, but I&#39;ll be okay. I&#39;ll just stay here for all eternity and wait for Proto to break my bones.
+[[Recruit Skel]] 
+[[Put Skel Out of Her Misery]]</tw-passagedata>
+<tw-passagedata pid="43" name="Put Skel Out of Her Misery" tags="" position="414.0001,626">(color: red)[Skel got her bones broken.]
+[[Okay]] </tw-passagedata>
+<tw-passagedata pid="44" name="Okay" tags="" position="152,128">[[Break the Glass]] 
+[[Retreat]]</tw-passagedata>
+<tw-passagedata pid="45" name="Retreat" tags="" position="911,128">Heroes don&#39;t retreat!
+[[Okay]] </tw-passagedata>
+<tw-passagedata pid="46" name="You: Totem Head" tags="" position="539.0003999999999,629">&quot;Wait, please, no! I&#39;m not actually powerful! I can&#39;t hurt any of you, I&#39;m just a computer program, not a physical being!&quot;
+[[Spare Him]]
+[[Kill]]</tw-passagedata>
+<tw-passagedata pid="47" name="You: Flamethrower" tags="" position="664.0005999999998,630">&quot;Wait, please no! I&#39;m not actually powerful! I can&#39;t hurt any of you, I&#39;m just a computer program, not a living being!&quot;
+[[Spare Him]] 
+[[Kill]] </tw-passagedata>
+<tw-passagedata pid="48" name="S.K.I.T.T.: Laser Charge" tags="" position="789.0006999999998,630">&quot;Wait, don&#39;t hurt me! I&#39;m not actually powerful, I can&#39;t even hurt any of you!  I&#39;m just a computer program!&quot;
+[[Spare Him]] 
+[[Kill]] </tw-passagedata>
+<tw-passagedata pid="49" name="Skel: Bone Tussle" tags="" position="914.0008999999998,630">&quot;Wait, don&#39;t hurt me! I&#39;m not actually powerful! I&#39;m just a computer program, I can&#39;t even touch you!&quot;
+[[Spare Him]] 
+[[Kill]] </tw-passagedata>
+<tw-passagedata pid="50" name="Spare Him" tags="" position="1164.0011999999997,628">You idiot! Why didn&#39;t you fight him? That takes away from the whole story! Oh yeah, and this isn&#39;t &#39;Proto&#39; or &#39;S.K.I.T.T.&#39; or any character talking, it&#39;s me! I&#39;m the narrator! Try fighting me, I control the game!
+[[Fight the Narrator]]</tw-passagedata>
+<tw-passagedata pid="51" name="Kill" tags="" position="10.0001,615">&quot;Wait, I can&#39;t really die, either, just feel pain. What&#39;s the point in trying?&quot;
+[[Spare Him]] </tw-passagedata>
+<tw-passagedata pid="52" name="Title Screen" tags="" position="156.0001,3">&lt;h1 id=&quot;Title&quot;&gt;Prototype 1&lt;/h1&gt;
+Press [[Start]] to Begin</tw-passagedata>
+<tw-passagedata pid="53" name="Fight the Narrator" tags="" position="1039.0010999999997,630">Did you recruit Skel?
+[[I Did]]
+[[I Didn&#39;t]]</tw-passagedata>
+<tw-passagedata pid="54" name="You: Totem Toss" tags="" position="289.0003999999999,750">Really? I&#39;m just a voice, you can&#39;t see me or feel me. Don&#39;t take that erotically. Here, I&#39;ll make it a fair fight and show up.
+[[You: Flamethrow]]
+[[S.K.I.T.T.: Mega Beam]]
+[[Proto: Wreck Stuff]]
+&lt;img
+src=&quot;https://indypopcon.com/wp-content/uploads/2016/01/jon-headshot.png&quot; width=600px alt=Middle Aged Man in Sound Booth&gt;</tw-passagedata>
+<tw-passagedata pid="55" name="S.K.I.T.T.: Super Laser" tags="" position="414.0004999999999,754">Really? I&#39;m just a voice, you can&#39;t see me or feel me. Don&#39;t take that erotically. Here, I&#39;ll make it a fair fight and show up.
+[[You: Flamethrow]]
+[[S.K.I.T.T.: Mega Beam]]
+[[Proto: Wreck Stuff]]
+&lt;img
+src=&quot;https://indypopcon.com/wp-content/uploads/2016/01/jon-headshot.png&quot; width=600px alt=Middle Aged Man in Sound Booth&gt;</tw-passagedata>
+<tw-passagedata pid="56" name="Skel: Spine Whip" tags="" position="539.0006999999998,754">Really? I&#39;m just a voice, you can&#39;t see me or feel me. Don&#39;t take that erotically. Here, I&#39;ll make it a fair fight and show up.
+[[You: Flamethrow]]
+[[S.K.I.T.T.: Mega Beam]]
+[[Proto: Wreck Stuff]]
+&lt;img
+src=&quot;https://indypopcon.com/wp-content/uploads/2016/01/jon-headshot.png&quot; width=600px alt=Middle Aged Man in Sound Booth&gt;</tw-passagedata>
+<tw-passagedata pid="57" name="Proto: World Bend" tags="" position="658.0003999999999,755">Really? I&#39;m just a voice, you can&#39;t see me or feel me. Don&#39;t take that erotically. Here, I&#39;ll make it a fair fight and show up.
+[[You: Flamethrow]]
+[[S.K.I.T.T.: Mega Beam]]
+[[Proto: Wreck Stuff]]
+&lt;img
+src=&quot;https://indypopcon.com/wp-content/uploads/2016/01/jon-headshot.png&quot; width=600px alt=Middle Aged Man in Sound Booth&gt;</tw-passagedata>
+<tw-passagedata pid="58" name="You: Flamethrow" tags="" position="540,881">&lt;img
+src=&quot;https://indypopcon.com/wp-content/uploads/2016/01/jon-headshot.png&quot; width=250px alt=Middle Aged Man in Sound Booth&gt;
+The Narrator used Sonic Sound! If you&#39;re gonna play like that, I&#39;ll just make it so that you can&#39;t beat me unless you look around!
+You Use:
+[[You: Flamethrow]]
+[[S.K.I.T.T.: Mega Beam]] 
+[[Skel: Afterlife Shock]] 
+[[Proto: Wreck Stuff]] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[[You: Beat the Game]]</tw-passagedata>
+<tw-passagedata pid="59" name="S.K.I.T.T.: Mega Beam" tags="" position="665,885">&lt;img
+src=&quot;https://indypopcon.com/wp-content/uploads/2016/01/jon-headshot.png&quot; width=250px alt=Middle Aged Man in Sound Booth&gt;
+The Narrator used Sonic Sound! If you&#39;re gonna play like that, I&#39;ll just make it so that you can&#39;t beat me unless you look around!
+You Use:
+[[You: Flamethrow]]
+[[S.K.I.T.T.: Mega Beam]] 
+[[Skel: Afterlife Shock]] 
+[[Proto: Wreck Stuff]] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[[You: Beat the Game]]</tw-passagedata>
+<tw-passagedata pid="60" name="Skel: Afterlife Shock" tags="" position="790.0002,880">&lt;img
+src=&quot;https://indypopcon.com/wp-content/uploads/2016/01/jon-headshot.png&quot; width=250px alt=Middle Aged Man in Sound Booth&gt;
+The Narrator used Sonic Sound! If you&#39;re gonna play like that, I&#39;ll just make it so that you can&#39;t beat me unless you look around!
+You Use:
+[[You: Flamethrow]]
+[[S.K.I.T.T.: Mega Beam]] 
+[[Skel: Afterlife Shock]] 
+[[Proto: Wreck Stuff]] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[[You: Beat the Game]]</tw-passagedata>
+<tw-passagedata pid="61" name="Proto: Wreck Stuff" tags="" position="783.0006999999998,755">&lt;img
+src=&quot;https://indypopcon.com/wp-content/uploads/2016/01/jon-headshot.png&quot; width=250px alt=Middle Aged Man in Sound Booth&gt;
+The Narrator used Sonic Sound! If you&#39;re gonna play like that, I&#39;ll just make it so that you can&#39;t beat me unless you look around!
+You Use:
+[[You: Flamethrow]]
+[[S.K.I.T.T.: Mega Beam]] 
+[[Skel: Afterlife Shock]] 
+[[Proto: Wreck Stuff]] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[[You: Beat the Game]]</tw-passagedata>
+<tw-passagedata pid="62" name="You: Beat the Game" tags="" position="408,879">No! You actually listened to me! That never happens! Curse you! Oh, I know what to do to punish you...
+[[Uh-Oh...]]</tw-passagedata>
+<tw-passagedata pid="63" name="Uh-Oh..." tags="" position="283,880">YOU CAN&#39;T PLAY THE GAME ANYMORE! IT ENDS HERE!
+Click [[Here]] to Beat the Game</tw-passagedata>
+<tw-passagedata pid="64" name="Here" tags="" position="1164.0012999999997,755">Congrats! You win! I hate you, never come back.
+[[The End]]
+
+Click on &quot;The End&quot; to replay any part of the story! Thank you for playing. This isn&#39;t the narrator talking, by the way.</tw-passagedata>
+<tw-passagedata pid="65" name="The End" tags="" position="139,878">[[Return to the Beginning]]
+[[Return to the Halls]]
+[[Return to the Dome]]
+[[Return to the Return to the Start Room]]
+[[Return to the Evil Tower]]
+[[Return to the Narrator Fight]]</tw-passagedata>
+<tw-passagedata pid="66" name="Return to the Beginning" tags="" position="1039.0010999999997,755">[[Start]] </tw-passagedata>
+<tw-passagedata pid="67" name="Return to the Halls" tags="" position="914.0008999999998,755">[[Open the Door]] </tw-passagedata>
+<tw-passagedata pid="68" name="Return to the Dome" tags="" position="914.0012999999997,880">[[Main Hall]] </tw-passagedata>
+<tw-passagedata pid="69" name="Return to the Return to the Start Room" tags="" position="1039.0015999999996,880">[[Recruit S.K.I.T.T.]] </tw-passagedata>
+<tw-passagedata pid="70" name="Return to the Evil Tower" tags="" position="1168,880">[[Break the Glass]] </tw-passagedata>
+<tw-passagedata pid="71" name="Return to the Narrator Fight" tags="" position="665,1010">[[Spare Him]] </tw-passagedata>
+<tw-passagedata pid="72" name="Yep" tags="" position="11,754">The tower was much smaller on the inside, you and your team are about to reach Proto. He&#39;s ready for battle, what do you do to fight?
+[[You: Totem Head]]
+[[You: Flamethrower]]
+[[S.K.I.T.T.: Laser Charge]]
+[[Skel: Bone Tussle]]
+
+&lt;img src: &quot;http://cdn.obsidianportal.com/assets/194604/Festrog.png&quot; width:300px alt=Proto&gt;</tw-passagedata>
+<tw-passagedata pid="73" name="Nope" tags="" position="143.0001,753">The tower was much smaller on the inside, you and your team are about to reach Proto. He&#39;s ready for battle, what do you do to fight?
+[[You: Totem Head]]
+[[You: Flamethrower]]
+[[S.K.I.T.T.: Laser Charge]]
+
+&lt;img src: &quot;http://cdn.obsidianportal.com/assets/194604/Festrog.png&quot; width:300px alt=Proto&gt;</tw-passagedata>
+<tw-passagedata pid="74" name="I Did" tags="" position="804,1010">Fight the Narrator!
+[[You: Totem Tossing]]
+[[S.K.I.T.T.: Super Laser!]]
+[[Skel: Spine Whiping]]
+[[Proto: World Bending]]</tw-passagedata>
+<tw-passagedata pid="75" name="I Didn&#39;t" tags="" position="929.0001,1005">Fight the Narrator!
+[[You: Totem Toss]]
+[[S.K.I.T.T.: Super Laser]]
+[[Proto: World Bend]]</tw-passagedata>
+<tw-passagedata pid="76" name="You: Totem Tossing" tags="" position="536.0001,1006">Really? I&#39;m just a voice, you can&#39;t see me or feel me. Don&#39;t take that erotically. Here, I&#39;ll make it a fair fight and show up.
+[[You: Flamethrow]]
+[[S.K.I.T.T.: Mega Beam]]
+[[Skel: Afterlife Shock]]
+[[Proto: Wreck Stuff]]
+&lt;img
+src=&quot;https://indypopcon.com/wp-content/uploads/2016/01/jon-headshot.png&quot; width=600px alt=Middle Aged Man in Sound Booth&gt;</tw-passagedata>
+<tw-passagedata pid="77" name="S.K.I.T.T.: Super Laser!" tags="" position="411.00019999999995,1006">Really? I&#39;m just a voice, you can&#39;t see me or feel me. Don&#39;t take that erotically. Here, I&#39;ll make it a fair fight and show up.
+[[You: Flamethrowering]]
+[[S.K.I.T.T.: Mega Beam!]]
+[[Skel: Afterlife Shocker]]
+[[Proto: Wreck It]]
+&lt;img
+src=&quot;https://indypopcon.com/wp-content/uploads/2016/01/jon-headshot.png&quot; width=600px alt=Middle Aged Man in Sound Booth&gt;</tw-passagedata>
+<tw-passagedata pid="78" name="Skel: Spine Whiping" tags="" position="1179.0004999999999,1005">Really? I&#39;m just a voice, you can&#39;t see me or feel me. Don&#39;t take that erotically. Here, I&#39;ll make it a fair fight and show up.
+[[You: Flamethrow]]
+[[S.K.I.T.T.: Mega Beam]]
+[[Skel: Afterlife Shock]]
+[[Proto: Wreck Stuff]]
+&lt;img
+src=&quot;https://indypopcon.com/wp-content/uploads/2016/01/jon-headshot.png&quot; width=600px alt=Middle Aged Man in Sound Booth&gt;</tw-passagedata>
+<tw-passagedata pid="79" name="Proto: World Bending" tags="" position="1054.0002,1015">Really? I&#39;m just a voice, you can&#39;t see me or feel me. Don&#39;t take that erotically. Here, I&#39;ll make it a fair fight and show up.
+[[You: Flamethrow]]
+[[S.K.I.T.T.: Mega Beam]]
+[[Skel: Afterlife Shock]]
+[[Proto: Wreck Stuff]]
+&lt;img
+src=&quot;https://indypopcon.com/wp-content/uploads/2016/01/jon-headshot.png&quot; width=600px alt=Middle Aged Man in Sound Booth&gt;</tw-passagedata>
+<tw-passagedata pid="80" name="You: Flamethrowering" tags="" position="277.0001,1005">&lt;img
+src=&quot;https://indypopcon.com/wp-content/uploads/2016/01/jon-headshot.png&quot; width=250px alt=Middle Aged Man in Sound Booth&gt;
+The Narrator used Sonic Sound! If you&#39;re gonna play like that, I&#39;ll just make it so that you can&#39;t beat me unless you look around!
+You Use:
+[[You: Flamethrow]]
+[[S.K.I.T.T.: Mega Beam]] 
+[[Skel: Afterlife Shock]] 
+[[Proto: Wreck Stuff]] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[[You: Beat the Game]]</tw-passagedata>
+<tw-passagedata pid="81" name="S.K.I.T.T.: Mega Beam!" tags="" position="152.00029999999998,1003">&lt;img
+src=&quot;https://indypopcon.com/wp-content/uploads/2016/01/jon-headshot.png&quot; width=250px alt=Middle Aged Man in Sound Booth&gt;
+The Narrator used Sonic Sound! If you&#39;re gonna play like that, I&#39;ll just make it so that you can&#39;t beat me unless you look around!
+You Use:
+[[You: Flamethrow]]
+[[S.K.I.T.T.: Mega Beam]] 
+[[Skel: Afterlife Shock]] 
+[[Proto: Wreck Stuff]] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[[You: Beat the Game]]</tw-passagedata>
+<tw-passagedata pid="82" name="Skel: Afterlife Shocker" tags="" position="12.0001,879">&lt;img
+src=&quot;https://indypopcon.com/wp-content/uploads/2016/01/jon-headshot.png&quot; width=250px alt=Middle Aged Man in Sound Booth&gt;
+The Narrator used Sonic Sound! If you&#39;re gonna play like that, I&#39;ll just make it so that you can&#39;t beat me unless you look around!
+You Use:
+[[You: Flamethrow]]
+[[S.K.I.T.T.: Mega Beam]] 
+[[Skel: Afterlife Shock]] 
+[[Proto: Wreck Stuff]] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[[You: Beat the Game]]</tw-passagedata>
+<tw-passagedata pid="83" name="Proto: Wreck It" tags="" position="14.0002,1004">&lt;img
+src=&quot;https://indypopcon.com/wp-content/uploads/2016/01/jon-headshot.png&quot; width=250px alt=Middle Aged Man in Sound Booth&gt;
+The Narrator used Sonic Sound! If you&#39;re gonna play like that, I&#39;ll just make it so that you can&#39;t beat me unless you look around!
+You Use:
+[[You: Flamethrow]]
+[[S.K.I.T.T.: Mega Beam]] 
+[[Skel: Afterlife Shock]] 
+[[Proto: Wreck Stuff]] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[[You: Beat the Game]]</tw-passagedata>
+</tw-storydata>
+
+
+<tw-storydata name="Sticks and Stones" startnode="1" creator="Twine" creator-version="2.0.11" ifid="B1CA9EAB-24D6-4198-8A6B-A29A48ED41EA" format="Harlowe" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
+
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
+</script><tw-passagedata pid="1" name="Intro" tags="" position="674,334">You&#39;re fire is burning nicely, the light from it is shimmering on the cave walls. You&#39;ve been gone for a while, but it&#39;s time that you came back. Select your weapon to defend yourself from the harshness of the wild.
+[[Club]]
+[[Spear]]
+[[Hatchet]]
+[[Sling]]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[[Machine Gun.]]</tw-passagedata>
+<tw-passagedata pid="2" name="Club" tags="" position="542,334">You chose the club. You can use this to break thin walls and as a melee weapon.
+[[Continue]]</tw-passagedata>
+<tw-passagedata pid="3" name="Spear" tags="" position="814,333">You chose the spear. This is a great hunting tool and can cut things with ease.
+[[Continue]] </tw-passagedata>
+<tw-passagedata pid="4" name="Hatchet" tags="" position="676,462">You chose the hatchet. This allows you to cut large amounts of lumber without a problem. It can be used as a melee weapon, but is a bit slower to use than the club and definately gets more blood.
+[[Continue]] </tw-passagedata>
+<tw-passagedata pid="5" name="Sling" tags="" position="677,207">
+You chose the sling. You can use this to climb easier and to get across small casms. You can also use it as a whip.
+[[Continue]] </tw-passagedata>
+<tw-passagedata pid="6" name="Continue" tags="" position="539,466">You venture outside the cave. The first thing you see is a glissening lake with Eoraptors drinking from it. Would you like to hunt it?
+[[Yes]]
+[[No]]</tw-passagedata>
+<tw-passagedata pid="7" name="Yes" tags="" position="539,616">Which weapon did you select? (Be honest).
+[[The Club]]
+[[The Sling]]
+[[The Spear]]
+[[The Hatchet]]</tw-passagedata>
+<tw-passagedata pid="8" name="No" tags="" position="689,616">The Eoraptor gets away unharmed. You take a drink from the lake, but realize that vicous vilociraptors have shown up behind you, thirsty for blood! What do you do?
+[[Fight]]
+[[Run]]
+[[Accept Your Fate]]</tw-passagedata>
+<tw-passagedata pid="9" name="Weaponized Club" tags="" position="538,766">The raptors are all hit and hurt, 2 knocked out. You are able to escape, but the other raptor may be hunting you.
+[[Okay]] </tw-passagedata>
+<tw-passagedata pid="10" name="Mobility Sling" tags="" position="944,535">You whip the nearest raptor and scare them all off. You made it out untouched, great job!
+[[Okay]] </tw-passagedata>
+<tw-passagedata pid="11" name="Rescource Hatchet" tags="" position="839,766">One raptor was greatly injured, but that provoked the others to attack you. You played dead, and they bought it. You&#39;re greatly injured, but you can still walk.
+[[Okay]] </tw-passagedata>
+<tw-passagedata pid="12" name="Hunting Spear" tags="" position="989,766">One raptor died, but one of the others attacked you. Luckily, they both ran before you got too hurt.
+[[Okay]] </tw-passagedata>
+<tw-passagedata pid="13" name="Fight" tags="" position="801,491">What weapon did you pick?
+[[Hunting Spear]] 
+[[Mobility Sling]] 
+[[Rescource Hatchet]] 
+[[Weaponized Club]] </tw-passagedata>
+<tw-passagedata pid="14" name="Run" tags="" position="714,766">You made it out, but one of the raptor clawed your leg and you are bleeding out. Do you have the sling?
+[[Yeah]]
+[[I Didn&#39;t Pick That]]</tw-passagedata>
+<tw-passagedata pid="15" name="Accept Your Fate" tags="" position="819,616">You died. Your mom isn&#39;t proud. Return to your cave.
+[[Game Over]]</tw-passagedata>
+<tw-passagedata pid="16" name="Game Over" tags="" position="1069,630">Select Where You&#39;ll Respawn
+[[Return to Cave]]
+[[Return to Lake]]
+[[Return to Camp]]
+[[Return to Mine]]
+[[Return to the Village]]</tw-passagedata>
+<tw-passagedata pid="17" name="Return to Cave" tags="" position="962,299">[[Intro]] </tw-passagedata>
+<tw-passagedata pid="18" name="Return to Lake" tags="" position="1091,303">[[Continue]] </tw-passagedata>
+<tw-passagedata pid="19" name="The Club" tags="" position="369,582">The Eoraptor got away due to its superior speed. You&#39;re club was ineffective. You get a drink from the lake but quickly realized that there are 3 blood thirsty velociraptors behind you! What do you do?
+[[Fight]] 
+[[Run]] 
+[[Accept Your Fate]] </tw-passagedata>
+<tw-passagedata pid="20" name="The Sling" tags="" position="225,682">While the sling was close to hitting the Eoraptor, it just wasn&#39;t fast enough, unfortunately. You get a drink from the lake and realize that there are 3 blood thirsty velociraptors behind you! What do you do?
+[[Fight]] 
+[[Run]] 
+[[Accept Your Fate]] </tw-passagedata>
+<tw-passagedata pid="21" name="The Spear" tags="" position="384,708">The spear nailed the Eoraptor just right, now you have food! You won&#39;t need to eat for a while. You get a drink from the lake but quickly realize that there are 3 blood thirsty velociraptors behind you! What do you do?
+[[Fight]] 
+[[Run]] 
+[[Accept Your Fate]] </tw-passagedata>
+<tw-passagedata pid="22" name="The Hatchet" tags="" position="387,457">The Eoraptor got away. You weren&#39;t fast enough. You get a drink from the lake and quickly realize that there are 3 blood thirsty velociraptrs behind you! What do you do?
+[[Fight]] 
+[[Run]] 
+[[Accept Your Fate]] </tw-passagedata>
+<tw-passagedata pid="23" name="Yeah" tags="" position="714,891">You use the sling to tie up your wound, stop the blood from flowing. You no longer have a weapon.
+[[Okay]] </tw-passagedata>
+<tw-passagedata pid="24" name="I Didn&#39;t Pick That" tags="" position="864,916">The wound continues to bleed out, and you can only make it a few more miles. Hopefully that&#39;s enough.
+[[Okay]] </tw-passagedata>
+<tw-passagedata pid="25" name="Okay" tags="" position="534,892">It&#39;s getting dark, about time to build shelter. After building the shelter, you have 3 hours to:
+[[Hunt For Food]]
+[[Look For Rescources]]
+[[Sleep]]</tw-passagedata>
+<tw-passagedata pid="26" name="Hunt For Food" tags="" position="534,1042">You don&#39;t have to eat for a day.
+[[Cool]] </tw-passagedata>
+<tw-passagedata pid="27" name="Look For Rescources" tags="" position="396,1051">You found enough materials to build a transportable shelter. You don&#39;t need to use more than 10 seconds to build a shelter.
+[[Cool]] </tw-passagedata>
+<tw-passagedata pid="28" name="Sleep" tags="" position="833,1043">You are fully rested the next day, there&#39;s no need to rest for a long time.
+[[Cool]] </tw-passagedata>
+<tw-passagedata pid="29" name="Cool" tags="" position="409,926">There&#39;s a shortcut to your destination in a cave underground. Follow it?
+[[Sure]]
+[[I&#39;m Good]]</tw-passagedata>
+<tw-passagedata pid="30" name="Sure" tags="" position="989,984">Before you enter the mine I must ask, did you run from the velociraptors?
+[[I Did]] 
+[[No, What Makes You Think That? I&#39;M NOT SUSPICOUS YOU ARE.]] </tw-passagedata>
+<tw-passagedata pid="31" name="I&#39;m Good" tags="" position="670,1042">It takes 2 extra days to make it to the destination. Did you run from the velociraptors?
+[[I Did]]
+[[No, What Makes You Think That? I&#39;M NOT SUSPICOUS YOU ARE.]]</tw-passagedata>
+<tw-passagedata pid="32" name="I Did" tags="" position="404,1176">What weapon did you pick in the beginnning?
+[[That Club]]
+[[That Spear]]
+[[That Sling]]
+[[That Hatchet]]</tw-passagedata>
+<tw-passagedata pid="33" name="No, What Makes You Think That? I&#39;M NOT SUSPICOUS YOU ARE." tags="" position="570,1173">Okay. Did you go through the mine?
+[[Through]] 
+[[Around]] </tw-passagedata>
+<tw-passagedata pid="34" name="That Club" tags="" position="404,1326">You died from bleeding out.
+[[Game Over]] </tw-passagedata>
+<tw-passagedata pid="35" name="That Spear" tags="" position="554,1326">You died from bleeding out.
+[[Game Over]] </tw-passagedata>
+<tw-passagedata pid="36" name="That Sling" tags="" position="454,1451">You lived, luckily. Did you go through the mine or not?
+[[Mine End]]
+[[Around]]</tw-passagedata>
+<tw-passagedata pid="37" name="That Hatchet" tags="" position="854,1326">You died from bleeding out.
+[[Game Over]] </tw-passagedata>
+<tw-passagedata pid="38" name="Return to Camp" tags="" position="1072,445">[[Okay]] </tw-passagedata>
+<tw-passagedata pid="39" name="Return to Mine" tags="" position="1197,528">[[No, What Makes You Think That? I&#39;M NOT SUSPICOUS YOU ARE.]] </tw-passagedata>
+<tw-passagedata pid="40" name="Mine End" tags="" position="708,1131">You arrive at a tribal village, everyone seems to be awaiting your arrival. You are carrying the medicine to save a young girl. The question is: did you make it on time? You DID go through the mine, right?
+[[Yep]]</tw-passagedata>
+<tw-passagedata pid="41" name="Around" tags="" position="853,1182">You arrived at your destination, I&#39;ll be it much later than expected. What did you use your 3 hours for earlier?
+[[Food]]
+[[Rescources]]
+[[I Used Sleep]]</tw-passagedata>
+<tw-passagedata pid="42" name="Food" tags="" position="986,1159">You arrived an extra day late,  but that doesn&#39;t matter much since your mostly healthy.
+[[Oh]]</tw-passagedata>
+<tw-passagedata pid="43" name="Rescources" tags="" position="1003,1332">You arrived a day late, but there weren&#39;t really any benefits.
+[[Oh]] </tw-passagedata>
+<tw-passagedata pid="44" name="I Used Sleep" tags="" position="1152,1332">There was no real pentalty, you didn&#39;t have to rest, so you made it. Unfortunately, you&#39;re very hungry.
+[[Oh]]</tw-passagedata>
+<tw-passagedata pid="45" name="Oh" tags="" position="729,1381">You reach a small tribe, where everyone seems to be happy of your arrival. You have the medicine that is neccissary to save a young girl in the village, now input some decisions that you&#39;ve made to determine whether or not you&#39;re on time...
+
+Did you go through the cave?
+[[Yep]]
+[[I Went Around It]]</tw-passagedata>
+<tw-passagedata pid="46" name="Yep" tags="" position="579,1476">The girl survived. You made it just in the nic of time, she was nearly on her death bed. The entire tribe thanks you, and they are truly in debt...
+[[Hooray!!]]</tw-passagedata>
+<tw-passagedata pid="47" name="I Went Around It" tags="" position="869,1475">You didn&#39;t make it on time. You didn&#39;t want to go into the cave, and because of that, someone died. Try living with that on your conscousness...
+[[Game Over]] </tw-passagedata>
+<tw-passagedata pid="48" name="Hooray!!" tags="" position="724,1530">You win! Click below to replay any part of the adventure!
+[[Game Over]] 
+[[Credits]]</tw-passagedata>
+<tw-passagedata pid="49" name="Credits" tags="" position="724,1680">Written By: Robbie Champagne and Kirill Pierce
+Engine Used: Twine
+Programmer: Robbie Champagne
+Story By: Kirill Pierce
+Teachers: Eli and Sarah
+Can You Find the Hidden Non-Stone Age Easter Egg?
+GIZMO 4 LYFE
+[[Hooray!!]] </tw-passagedata>
+<tw-passagedata pid="50" name="Return to the Village" tags="" position="1114,780">[[Oh]]</tw-passagedata>
+<tw-passagedata pid="51" name="Machine Gun." tags="" position="834,163">That&#39;s not stone age! Try again!
+[[Game Over]] </tw-passagedata>
+<tw-passagedata pid="52" name="Through" tags="" position="695,1256">Your daring mindset may have hurt you, for there is a furocous T&#39;Rex inside the cave! You&#39;d better run, but what weapon did you pick?
+[[CLUB, I PICKED THE CLUB!]]
+[[SPEAR, I PICKED THE SPEAR!]]
+[[SLING, I PICKED THE SLING!]]
+[[HATCHET, I PICKED THE HATCHET!]]</tw-passagedata>
+<tw-passagedata pid="53" name="CLUB, I PICKED THE CLUB!" tags="" position="277,1241">This didn&#39;t really help, you were killed by the T-Rex.</tw-passagedata>
+<tw-passagedata pid="54" name="SPEAR, I PICKED THE SPEAR!" tags="" position="1111,1207">You used the spear as a pull volt to leap over a casm and leave the T-Rex!
+[[Oh]]</tw-passagedata>
+<tw-passagedata pid="55" name="SLING, I PICKED THE SLING!" tags="" position="995,1457">You used the sling to swing across a casm and leave the T-Rex!
+[[Oh]]</tw-passagedata>
+<tw-passagedata pid="56" name="HATCHET, I PICKED THE HATCHET!" tags="" position="1145,1457">This didn&#39;t come in handy, you died.
+[[Game Over]] </tw-passagedata>
+</tw-storydata>
+
+

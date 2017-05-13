@@ -1,0 +1,469 @@
+<tw-storydata name=" Test your luck" startnode="1" creator="Twine" creator-version="2.0.11" ifid="60D7A634-51F8-469B-9E26-6E45680408A9" format="Harlowe" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
+
+
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
+
+</script><tw-passagedata pid="1" name="Untitled Passage" tags="" position="495,14">&lt;h2&gt;Welcome&lt;h2&gt;
+
+this game is about you getting funny memes or something nasty
+if you are sensetive to nasty things, this is not for you.
+
+its like 50/50, but not as nasty
+
+[[round 1]]</tw-passagedata>
+<tw-passagedata pid="2" name="round 1" tags="" position="628,165">[[1]]                                          [[2]]</tw-passagedata>
+<tw-passagedata pid="3" name="1" tags="" position="500,304">&lt;img src=http://images.complex.com/complex/image/upload/c_limit,fl_progressive,q_80,w_680/ekyz1zvlzi0lni5mhqif.jpg&quot;width=100px&quot;&gt;</tw-passagedata>
+<tw-passagedata pid="4" name="2" tags="" position="776,299">Double-click this passage to edit it.</tw-passagedata>
+</tw-storydata>
+
+
+<tw-storydata name="Escape the bathroom" startnode="1" creator="Twine" creator-version="2.0.11" ifid="8099B956-47F2-4141-86C2-72AA4340230B" format="Harlowe" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url(https://fonts.googleapis.com/css?family=Indie+Flower); 
+
+tw-passage
+{
+	font-family: 'Indie Flower', cursive;
+}
+
+
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
+
+</script><tw-passagedata pid="1" name="intro" tags="" position="562,121">&lt;h2&gt;Welcome 2 escape the bathroom&lt;/h2&gt;
+
+This game is about escaping from your perents bathroom.And to do dat u are going 2 craft items. by the way, your mom locked u in there. dont get cought! good luck!
+
+[[begin]]
+
+
+
+(set: $cookedmeat to 0)
+(set: $knife to 0) 
+(set: $sparerubberpipe to 0) 
+(set: $lockpickingkit to 0)
+(set: $stab to 0)
+(set: $bobbypin to 0)</tw-passagedata>
+<tw-passagedata pid="2" name="begin" tags="" position="789,238">look in the bathroom:
+
+[[Plunger]]
+
+[[burning candle]]
+
+[[toilet paper]]
+
+[[turd]]
+
+[[spare rubber pipe]]</tw-passagedata>
+<tw-passagedata pid="3" name="Plunger" tags="" position="337,333">gross, looks like i can craft something, lets see:
+ [[Plunger+tolilet paper]] 
+ [[plunger+turd]]
+ [[plunger+burning candle]] </tw-passagedata>
+<tw-passagedata pid="4" name="burning candle" tags="" position="718,414">lets combine it with something:
+
+[[turd]] 
+[[toilet paper]] 
+[[Plunger]] </tw-passagedata>
+<tw-passagedata pid="5" name="toilet paper" tags="" position="868,414">lest combine it with something:
+
+[[Plunger+tolilet paper]] 
+</tw-passagedata>
+<tw-passagedata pid="6" name="turd" tags="" position="593,514">oh. my. God. behhhhh.
+
+U fainted. fail.
+
+[[intro]]</tw-passagedata>
+<tw-passagedata pid="7" name="spare rubber pipe" tags="" position="362,140">looks like it can act like a hose. ill conect it to the sink.
+
+[[Plunger]] 
+
+[[toilet paper]] 
+
+[[turd]] 
+
+[[burning candle]] 
+
+(set:$sparerubberpipe to 1)</tw-passagedata>
+<tw-passagedata pid="8" name="Plunger+tolilet paper" tags="" position="337,483">looks useful!
+
+[[add candle]]
+
+[[add turd]]</tw-passagedata>
+<tw-passagedata pid="9" name="plunger+turd" tags="" position="462,483">u fainted and died
+
+[[intro]] </tw-passagedata>
+<tw-passagedata pid="10" name="plunger+burning candle" tags="" position="121,323">wont work. try something else:
+
+[[plunger+turd]] 
+[[Plunger+tolilet paper]] </tw-passagedata>
+<tw-passagedata pid="11" name="add candle" tags="" position="338,633">its a torch! what should i do with it?
+
+[[burn down the door]]
+[[burn down the house]]</tw-passagedata>
+<tw-passagedata pid="12" name="add turd" tags="" position="468,628">for the last time its no use!
+
+[[intro]] </tw-passagedata>
+<tw-passagedata pid="13" name="burn down the door" tags="" position="339,787">the door is gone did u craft the hose??? 
+
+(if: $sparerubberpipe is 1)[ i can use the pipe to stop the fire! [[next room]] ]
+
+
+(if: $sparerubberpipe is 0)[ you died. plz restart [[intro]] ]</tw-passagedata>
+<tw-passagedata pid="14" name="burn down the house" tags="" position="488,783">&lt;h2&gt;R.I.C&lt;/h2&gt;       (rest. in.  crisps.) </tw-passagedata>
+<tw-passagedata pid="15" name="next room" tags="" position="333,955">this room is parents bedroom. the will smell the ashes fast and wake up. what to do?
+
+[[run]]
+[[sneak]]</tw-passagedata>
+<tw-passagedata pid="16" name="run" tags="" position="171,1192">your perents woke up but thought one had a bad dream and woke up anotherone. 
+
+[[hall]]</tw-passagedata>
+<tw-passagedata pid="17" name="sneak" tags="" position="869,1200">your perents woke up and spanked you HARD
+
+[[intro]] </tw-passagedata>
+<tw-passagedata pid="18" name="hall" tags="" position="717,1326">nothig to complex here.
+
+[[middle floor]]</tw-passagedata>
+<tw-passagedata pid="19" name="middle floor" tags="" position="477,1325">most the doors are locked.
+
+[[bathroom2]] 
+[[kitchen]]
+[[last floor]]</tw-passagedata>
+<tw-passagedata pid="20" name="bathroom2" tags="" position="485,1490">[[mirror]]
+[[bobby pin]]</tw-passagedata>
+<tw-passagedata pid="21" name="kitchen" tags="" position="633,1489">ok here are some useful things i found:
+[[knife]]
+[[raw meat]]
+ 
+</tw-passagedata>
+<tw-passagedata pid="22" name="last floor" tags="" position="784,1490">the doors are all locked here. 
+ [[middle floor]] 
+ 
+ 
+ 
+ (if: $lockpickingkit is 1)[you made a kit from before [[go outside]] ] 
+ 
+ </tw-passagedata>
+<tw-passagedata pid="23" name="knife" tags="" position="632,1639">very sharp, i have to be careful.
+
+ [[raw meat]] 
+ [[middle floor]]
+  
+  
+  (set: $knife to 1)
+  </tw-passagedata>
+<tw-passagedata pid="24" name="raw meat" tags="" position="798,1632">time to cook!
+
+[[cook]]</tw-passagedata>
+<tw-passagedata pid="25" name="go outside" tags="" position="359,1752">my perents will still be mad.i have an idea!
+
+[[run away]]
+[[give up]]</tw-passagedata>
+<tw-passagedata pid="26" name="run away" tags="" position="359,1902">you just read my mind!
+
+[[go to the forest]]
+
+[[stay in yard]]</tw-passagedata>
+<tw-passagedata pid="27" name="give up" tags="" position="509,1914">really! after all that effort!
+
+[[intro]] </tw-passagedata>
+<tw-passagedata pid="28" name="go to the forest" tags="" position="359,2052">very scary but better than sleeping i a stinky toilet. 
+im getting hungry, did i cook steak?
+
+
+(if: $cookedmeat is 1)[ its always good to think ahead.oh no, cyotes are here. [[run from them]] or [[fight them]] ]
+
+(if: $cookedmeat is 0)[ you died of stravation [[intro]] ]</tw-passagedata>
+<tw-passagedata pid="29" name="stay in yard" tags="" position="509,2052">you slept. your perents found you. they sent you to kid prison for summer. 
+
+[[intro]] </tw-passagedata>
+<tw-passagedata pid="30" name="run from them" tags="" position="359,2352">they catch you and eat you
+[[intro]] </tw-passagedata>
+<tw-passagedata pid="31" name="fight them" tags="" position="509,2353">ok, i have to be brave for once. how to start:
+
+[[kick]]
+[[punch]] 
+
+(if: $knife is 1)[ i can use my knife to stab them [[stab]] ]</tw-passagedata>
+<tw-passagedata pid="32" name="cook" tags="" position="796,1782">you got a cooked meat!
+
+[[middle floor]] 
+
+(set: $cookedmeat to 1)</tw-passagedata>
+<tw-passagedata pid="33" name="kick" tags="" position="508,2504">they all got scared and ran away.
+
+[[back home]] 
+[[sleep]] </tw-passagedata>
+<tw-passagedata pid="34" name="punch" tags="" position="660,2504">they got really mad and ate you. 
+
+[[intro]]</tw-passagedata>
+<tw-passagedata pid="35" name="stab" tags="" position="808,2503">perfect! they all died! 
+
+[[back home]]
+[[sleep]] 
+
+(set: $stab to 1)</tw-passagedata>
+<tw-passagedata pid="36" name="back home" tags="" position="809,2653">you are now in kid prison for 5 years
+
+[[intro]] 
+</tw-passagedata>
+<tw-passagedata pid="37" name="sleep" tags="" position="959,2654">im getting very tired, im going to sleep,imagening how i [[kicked the cyoteys]] 
+
+(if: $stab is 1)[ i acctuly stab them [[stabed the cyotes]] ]</tw-passagedata>
+<tw-passagedata pid="38" name="kicked the cyoteys" tags="" position="959,2803">they came back while you were sleeping and killed you.
+
+[[intro]]</tw-passagedata>
+<tw-passagedata pid="39" name="stabed the cyotes" tags="" position="1109,2804">you safely slept. its now morning i think my parents miss me.
+
+[[go back home]]</tw-passagedata>
+<tw-passagedata pid="40" name="go back home" tags="" position="1108,2954">i need a plan first.
+
+[[tell them you were kidnaped by mistories neighbors(lie)]]
+
+[[tell the truth]]</tw-passagedata>
+<tw-passagedata pid="41" name="tell them you were kidnaped by mistories neighbors(lie)" tags="" position="1108,3106">they cried for 2 hours and belived you. now your mistorius nebghors are in prison. no really, they shuld be, they did crime for years! Anyway, you won!
+
+[[credits]]</tw-passagedata>
+<tw-passagedata pid="42" name="tell the truth" tags="" position="1258,3104">you got droped off in Siberia and got eaten by polar bears.
+
+[[intro]] </tw-passagedata>
+<tw-passagedata pid="43" name="credits" tags="" position="1108,3255">writen by:Kirill Pierce
+program: Twine
+progamer: Kirill Pierce
+Teachers: Sarah &amp; Eli
+GIZMO 4 LYFE
+ hoped you had fun!
+ 
+ 
+ [[GOD MODE]]</tw-passagedata>
+<tw-passagedata pid="44" name="mirror" tags="" position="484,1636">not useful.
+
+[[bobby pin]] </tw-passagedata>
+<tw-passagedata pid="45" name="bobby pin" tags="" position="590,1764">(if: $knife is 1 and $bobbypin is 1)[
+a knife + bobby pin = lockpicking Kit! (set: $lockpickingkit to 1)]
+
+
+(else:)[you cant make a lockpicking kit yet]
+
+[[middle floor]] 
+
+(set: $bobbypin to 1)</tw-passagedata>
+<tw-passagedata pid="46" name="GOD MODE" tags="" position="1108,3405">this is your reward for compleating the game &gt;;)
+
+[[kill your perents]]
+[[abliterate cyotes]]
+[[destroy the house]]
+
+
+
+
+&lt;img src=&quot;https://media.giphy.com/media/fikgpdoGJBrry/giphy.gif&quot;width=&quot;500px&quot;&gt;
+</tw-passagedata>
+<tw-passagedata pid="47" name="kill your perents" tags="" position="880,3646">[[deadpool&#39;s swords]]
+[[44]] 
+[[meteor]]
+[[shotgun]]</tw-passagedata>
+<tw-passagedata pid="48" name="abliterate cyotes" tags="" position="954,3394">pew pew who feels like cyotey stew.
+
+[[GOD MODE]] </tw-passagedata>
+<tw-passagedata pid="49" name="destroy the house" tags="" position="942,3519">[[dynamite]]
+[[burn it down]]
+</tw-passagedata>
+<tw-passagedata pid="50" name="dynamite" tags="" position="1408,3707">boom! crash! oh look, i made the house disapear. im a magic man! 
+
+[[GOD MODE]] </tw-passagedata>
+<tw-passagedata pid="51" name="burn it down" tags="" position="1558,3706">whats that black pile??? you:oh, just my old house.
+
+[[GOD MODE]] </tw-passagedata>
+<tw-passagedata pid="52" name="deadpool&#39;s swords" tags="" position="1108,3705">slice, slice, lookes like they are out of order
+
+[[GOD MODE]] </tw-passagedata>
+<tw-passagedata pid="53" name="44" tags="" position="1257,3705">baham, guys, you forgot your head.
+
+[[GOD MODE]] </tw-passagedata>
+<tw-passagedata pid="54" name="meteor" tags="" position="1408,3581">is it a bird? is it a plane? no its just a legendary meateor 
+heading towards earth.
+
+[[GOD MODE]] </tw-passagedata>
+<tw-passagedata pid="55" name="shotgun" tags="" position="1386,3375">ok, dont panic theres a hole inside you.
+
+[[GOD MODE]] </tw-passagedata>
+</tw-storydata>
+
+
+<tw-storydata name="Fight for the right" startnode="1" creator="Twine" creator-version="2.0.11" ifid="00642D79-13F2-4B4A-8DE2-1ABF51251808" format="Harlowe" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-passage #Something
+ {
+	color:lightgreen;
+ }
+tw-sidebar
+   display:none
+ }
+
+
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
+
+
+
+</script><tw-passagedata pid="1" name="Welcome" tags="" position="387,1">&lt;h2 id+&quot;Title&quot;&gt;Welcome&lt;/h2&gt; In this game theres going to be a few peaple who just like to mess with peaple. this time, their choice was a bad one. Anyway, lets practice on this guy   pick your first move:
+
+[[kick]]
+[[punch]] 
+[[swipe]]</tw-passagedata>
+<tw-passagedata pid="2" name="kick" tags="" position="200,80">wow, he flew far! he used a punch 
+
+you:80%
+he:70%
+
+[[next]] </tw-passagedata>
+<tw-passagedata pid="3" name="punch" tags="" position="559,108">boom! oh that looked painful,not too much damage though
+
+he used a kick   you:70% he:80%
+
+[[next]]</tw-passagedata>
+<tw-passagedata pid="4" name="swipe" tags="" position="374,230">__ding! head right on the floor. choose: [[floor punch]]
+                                       [[elbow crush]]
+									   
+									   
+*you:100%
+*He:65%
+
+</tw-passagedata>
+<tw-passagedata pid="5" name="next" tags="" position="559,258">your turn use an attak:
+
+[[Bronco Header]]
+[[Karate chop]]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[[THIS IS SPARTA!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!]]
+</tw-passagedata>
+<tw-passagedata pid="6" name="floor punch" tags="" position="375,381">that didnt end up good. u faild</tw-passagedata>
+<tw-passagedata pid="7" name="elbow crush" tags="" position="75,205">ohhhhhhhhhhh!!!!! u just broke his rib cage  
+
+[[fireball]] &lt;img src=&quot;data:image/jpeg;base64,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&quot; width=&quot;70px&quot; alt=&quot;Fireball&quot;&gt;
+
+
+
+[[icespike]] &lt;img src=&quot;data:image/jpeg;base64,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&quot;width=&quot;60px&quot; alt=Ice Spike&gt;
+
+
+
+[[lightning]] &lt;img src=&quot;data:image/jpeg;base64,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&quot;width=&quot;70px&quot; alt=&quot;Force Lightning&quot;&gt;</tw-passagedata>
+<tw-passagedata pid="8" name="Bronco Header" tags="" position="7,496">FINISH HIM! 
+
+[[spare]]
+[[mintos &amp; cola]]
+[[explosive hasard]]</tw-passagedata>
+<tw-passagedata pid="9" name="Karate chop" tags="" position="827,258">crack! fractured arm for his birthday  </tw-passagedata>
+<tw-passagedata pid="10" name="THIS IS SPARTA!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" tags="" position="954,607">kaboooooooom! the earth shook and he splatered on the tree.
+
+I Think U Won</tw-passagedata>
+<tw-passagedata pid="11" name="spare" tags="" position="495,645">he lived sadly ever after
+
+
+
+
+
+
+
+
+[[did u see the easter eggs???]]</tw-passagedata>
+<tw-passagedata pid="12" name="mintos &amp; cola" tags="" position="693,608">u gave him some diet cola, u give him mentos, fizzzzzzz............. boom! a mix of your enemy and soda. gross.</tw-passagedata>
+<tw-passagedata pid="13" name="explosive hasard" tags="" position="986,283">what happens when you mix C4 and bad guys??? i dont want to find out.</tw-passagedata>
+<tw-passagedata pid="14" name="did u see the easter eggs???" tags="" position="854,732">after u press next, scroll down at the bottom of the screen</tw-passagedata>
+<tw-passagedata pid="15" name="fireball" tags="" position="312,612">Oh, he looks a little tosty
+
+[[Next Levle]]</tw-passagedata>
+<tw-passagedata pid="16" name="icespike" tags="" position="612,483">Double-click this passage to edit it.</tw-passagedata>
+<tw-passagedata pid="17" name="lightning" tags="" position="1030,437">Double-click this passage to edit it.</tw-passagedata>
+<tw-passagedata pid="18" name="Next Levle" tags="" position="311,762">ok now its your first levle. you will finght </tw-passagedata>
+</tw-storydata>
+
+
