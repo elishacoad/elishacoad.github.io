@@ -54,14 +54,16 @@ function setup() {
 		newEnemy.shapeColor = "rgb(" + String(parseInt(random(100, 255))) + "," + String(parseInt(random(100, 255))) + "," + String(parseInt(random(100, 255))) + ")";
 		enemies.add(newEnemy);
 	}
-	timer = setInterval(function() {
-		if (!isPaused) {
-			time++;
-			for (var i = 0; i < enemies.length; i++) {
-				enemies[i].addSpeed(0.1, enemy.getDirection());
-			};
-		}
-	}, 1000);
+	if (gamemode == "survival") {
+		timer = setInterval(function() {
+			if (!isPaused) {
+				time++;
+				for (var i = 0; i < enemies.length; i++) {
+					enemies[i].addSpeed(0.1, enemy.getDirection());
+				};
+			}
+		}, 1000);
+	}
 
 }
 
@@ -129,8 +131,8 @@ function getSlowPill(player, pill) {
 	};
 	setTimeout(function() {
 		for (var i = 0; i < enemies.length; i++) {
-		enemy = enemies[i];
-		enemy.addSpeed(10, enemy.getDirection());
+			enemy = enemies[i];
+			enemy.addSpeed(10, enemy.getDirection());
 		};
 		isSlowPillOut = false;
 	}, 5000);
