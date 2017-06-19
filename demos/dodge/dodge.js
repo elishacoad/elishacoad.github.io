@@ -48,7 +48,7 @@ function draw() {
     enemy.position.y = -100;
     speed = -1000;
     document.getElementById("restart").onclick = function Restart() {
-  location.reload();
+    location.reload();
   };
   }
 

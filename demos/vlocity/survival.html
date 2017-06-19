@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vlocity</title>
+    <!-- Meta Data -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap and jQuery -->
+    <link rel="stylesheet" href="libraries/bootstrap/css/bootstrap.min.css">
+
+    <!-- NEEDS JQUERY.MIN.JS (also find out why)-->
+    <script src="libraries/jquery/jquery.js"></script>
+    <script src="libraries/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="libraries/p5/p5.js"></script>
+    <script src="libraries/p5/p5.play.js"></script>
+    <script src="libraries/p5/p5.sound.js"></script>
+    <style type="text/css">
+    body {
+        text-align: center;
+    }
+
+    #back {
+        position: absolute;
+        top: 1vh;
+        left: 3vh;
+    }
+
+    #restart {
+        position: absolute;
+        top: 1vh;
+        left: 10vh;
+    }
+
+    #time {
+        position: absolute;
+        top: 1vh;
+        right: 3vh;
+    }
+
+    #points {
+        position: absolute;
+        top: 1vh;
+        right: 15vh;
+    }
+
+    #gamemode {
+        position: relative;
+        top: 1vh;
+        text-transform: capitalize;
+    }
+    </style>
+    <script type="text/javascript" src="survival.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div style="width: 100%; text-align: center;">
+        <p id="gamemode"></p>
+    </div>
+    <p class="button" id="back">Back</p>
+    <p class="button" id="restart">Restart</p>
+    <p id="time">Time: 0</p>
+    <p id="points">Points: 0</p>
+    <br>
+</body>
+
+</html>

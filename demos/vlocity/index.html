@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vlocity</title>
+    <link href='assets/Comfortaa.ttf' rel='stylesheet' type='text/css'>
+    <link href='assets/Megrim.ttf' rel='stylesheet' type='text/css'>
+
+    <!-- Meta Data -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap and jQuery -->
+    <link rel="stylesheet" href="libraries/bootstrap/css/bootstrap.min.css">
+
+    <!-- NEEDS JQUERY.MIN.JS (also find out why)-->
+    <script src="libraries/jquery/jquery.js"></script>
+    <script src="libraries/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="libraries/p5/p5.js"></script>
+    <script src="libraries/p5/p5.play.js"></script>
+    <script src="libraries/p5/p5.sound.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script type="text/javascript" src="main.js"></script>
+</head>
+
+<body>
+    <h1 id="title">Vlocity</h1>
+    <br>
+    <p class="button" id="play">Play</p>
+    <br>
+    <div class="container">
+        <div class="row gamemodes">
+            <div class="col-md-12">
+                <h3>Gamemodes</h3>
+                <p class="gamemode button" id="survival">Survival</p>
+                <p class="gamemode button" id="waves">Waves</p>
+            </div>
+        </div>
+        <div class="row difficulties">
+            <div class="col-md-4">
+                <h3>Difficulty</h3>
+                <p class="difficulty button easy" id="easy">Easy</p>
+                <p class="difficulty button medium" id="medium">Medium</p>
+                <p class="difficulty button hard" id="hard">Hard</p>
+                <p class="difficulty button extreme" id="extreme">Extreme</p>
+                <p class="difficulty button other" id="other">Harder than Dark Souls</p>
+            </div>
+            <div class="col-md-4">
+                <h3>Highscores</h3>
+                <p class="difficulty easy" id="easyScore">-</p>
+                <p class="difficulty medium" id="mediumScore">-</p>
+                <p class="difficulty hard" id="hardScore">-</p>
+                <p class="difficulty extreme" id="extremeScore">-</p>
+                <p class="difficulty other" id="otherScore">-</p>
+            </div>
+            <div class="col-md-4">
+                <h3>Best Times</h3>
+                <p class="difficulty easy" id="easyTime">-</p>
+                <p class="difficulty medium" id="mediumTime">-</p>
+                <p class="difficulty hard" id="hardTime">-</p>
+                <p class="difficulty extreme" id="extremeTime">-</p>
+                <p class="difficulty other" id="otherTime">-</p>
+            </div>
+        </div>
+        <div class="row">
+        	<div class="col-md-12">
+        		<p id="bestWave">Best Wave: 0</p>
+        	</div>
+        </div>
+    </div>
+</body>
+
+</html>

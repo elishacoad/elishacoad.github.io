@@ -1,0 +1,116 @@
+#title {
+    font-size: 16vh;
+    font-family: 'Megrim', cursive;
+    font-style: italic;
+}
+
+body {
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    overflow-y: hidden;
+}
+
+.gamemodes {
+    margin-top: 10vh;
+}
+
+.difficulties {
+    margin-top: 2vh;
+}
+
+#play {
+    font-size: 3vh;
+    color: grey;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+#play:hover {
+    font-size: 4vh;
+    font-style: italic;
+    color: black !important;
+    text-shadow: 2px 2px 2px rgb(60, 60, 60);
+}
+
+.easy {
+    color: green;
+}
+
+.medium {
+    color: orange;
+}
+
+.hard {
+    color: red;
+}
+
+.extreme {
+    color: blue;
+}
+
+.other {
+    color: purple;
+}
+
+.other.selected {
+    font-size: 3.6vh;
+}
+
+p {
+    transition: 1s;
+    font-size: 2vh;
+}
+
+.selected {
+    font-size: 4.5vh;
+}
+
+.button {
+    cursor: pointer;
+}
+
+#bestWave {
+    margin-top: 3vh;
+    margin-bottom: -3vh;
+    font-size: 2vh;
+}
+
+
+/*MainGame Styles*/
+
+#back {
+    position: absolute;
+    top: 1vh;
+    left: 3vh;
+}
+
+#restart {
+    position: absolute;
+    top: 1vh;
+    left: 10vh;
+}
+
+#time {
+    position: absolute;
+    top: 1vh;
+    right: 3vh;
+}
+
+#points {
+    position: absolute;
+    top: 1vh;
+    right: 15vh;
+}
+
+#gamemode {
+    position: relative;
+    top: 1vh;
+    text-transform: capitalize;
+}
+
+#wave {
+    position: absolute;
+    top: 1vh;
+    right: 3vh;
+}
