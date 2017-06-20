@@ -67,6 +67,9 @@ function draw() {
 			turnRed = 255;
 			player.shapeColor = 'white';
 		}
+		if (!soundtrack.isPlaying()) {
+            soundtrack.play();
+        }
 	}
 
 	endGame();
