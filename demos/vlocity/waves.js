@@ -31,7 +31,7 @@ function setup() {
 	players.add(player);
 	for (var i = 0; i < numEnemy; i++) {
 		newEnemy = createSprite(random(width - width / 5, width - 30), random(30, height / 5), 50, 50);
-		newEnemy.setSpeed(random(9, 13), -random(190, 260));
+		newEnemy.setSpeed(random(8, 12), -random(190, 260));
 		newEnemy.shapeColor = "rgb(" + String(parseInt(random(100, 255))) + "," + String(parseInt(random(100, 255))) + "," + String(parseInt(random(100, 255))) + ")";
 		enemies.add(newEnemy);
 		enemiesLeft = numEnemy;
@@ -132,6 +132,7 @@ function newWave() {
 	} else {
 		text("Wave Completed!", width / 2, height / 2);
 		if (timeoutHasExecuted == false) {
+			waveSound.play();
 			setTimeout(function() { spawnNewEnemies(); }, 3000);
 		}
 		timeoutHasExecuted = true;
@@ -156,7 +157,7 @@ function bulletHit(bullet, enemy) {
 	bullet.remove();
 	enemy.remove();
 	points += 1;
-	coinSound.play();
+	hit.play();
 	enemiesLeft--;
 }
 
@@ -192,7 +193,7 @@ function spawnNewEnemies() {
 		for (var i = 0; i < numEnemy; i++) {
 			findNewSpawns();
 			newEnemy = createSprite(spawnEnemyXPosition, spawnEnemyYPosition, 50, 50);
-			newEnemy.setSpeed(random(9, 13), spawnEnemyDirection);
+			newEnemy.setSpeed(random(8, 12), spawnEnemyDirection);
 			newEnemy.shapeColor = "rgb(" + String(parseInt(random(100, 255))) + "," + String(parseInt(random(100, 255))) + "," + String(parseInt(random(100, 255))) + ")";
 			enemies.add(newEnemy);
 			enemiesLeft = numEnemy;

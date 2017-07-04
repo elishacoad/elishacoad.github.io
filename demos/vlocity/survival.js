@@ -19,6 +19,7 @@ var spawnEnemyXPosition;
 var spawnEnemyYPosition;
 var spawnEnemyDirection;
 var isSlowPillOut = false;
+var enemySpeed = 0;
 
 $(window).blur(function() {
 	isPaused = true;
@@ -30,7 +31,7 @@ $(window).focus(function() {
 
 function preload() {
 	loadAssets();
-	impact.setVolume(1);
+	bounce.setVolume(1);
 	end.setVolume(1);
 	soundtrack.setVolume(0.5);
 	coinSound.setVolume(1);
@@ -50,7 +51,11 @@ function setup() {
 	players.add(player);
 	for (var i = 0; i < numEnemy; i++) {
 		newEnemy = createSprite(random(width - width / 5, width - 30), random(30, height / 5), 50, 50);
-		newEnemy.setSpeed(random(9, 13), -random(190, 260));
+		newEnemy.setSpeed(random(7, 10), -random(190, 260));
+		// var red = random(255);
+		// var green = random(255);
+		// var blue = 510 - (red + green)/1.5;
+		// newEnemy.shapeColor = "rgb(" + String(parseInt(red)) + "," + String(parseInt(green)) + "," + String(parseInt(blue)) + ")";
 		newEnemy.shapeColor = "rgb(" + String(parseInt(random(100, 255))) + "," + String(parseInt(random(100, 255))) + "," + String(parseInt(random(100, 255))) + ")";
 		enemies.add(newEnemy);
 	}
@@ -58,8 +63,9 @@ function setup() {
 		timer = setInterval(function() {
 			if (!isPaused) {
 				time++;
+				enemySpeed += 0.05;
 				for (var i = 0; i < enemies.length; i++) {
-					enemies[i].addSpeed(0.1, enemy.getDirection());
+					enemies[i].addSpeed(enemySpeed, enemy.getDirection());
 				};
 			}
 		}, 1000);
@@ -76,6 +82,9 @@ function draw() {
 		playerMovement();
 		enemyMovement();
 		updatePickups();
+		if (!soundtrack.isPlaying()) {
+        soundtrack.play();
+    }
 	}
 
 	if (hasShield) {
@@ -112,14 +121,14 @@ function getCoin(player, coin) {
 function getGem(player, pill) {
 	pill.remove();
 	points += 5;
-	coinSound.play();
+	gemSound.play();
 	dropsCollected++;
 }
 
 function getShield(player, shield) {
 	shield.remove();
 	hasShield = true;
-	coinSound.play();
+	shieldSound.play();
 	dropsCollected++;
 }
 
@@ -127,26 +136,32 @@ function getSlowPill(player, pill) {
 	pill.remove();
 	for (var i = 0; i < enemies.length; i++) {
 		enemy = enemies[i];
-		enemy.addSpeed(-10, enemy.getDirection());
+		enemy.addSpeed(-7, enemy.getDirection());
 	};
 	setTimeout(function() {
 		for (var i = 0; i < enemies.length; i++) {
 			enemy = enemies[i];
-			enemy.addSpeed(10, enemy.getDirection());
+			enemy.addSpeed(7, enemy.getDirection());
 		};
 		isSlowPillOut = false;
 	}, 5000);
-	coinSound.play();
+	slowSound.play();
 	dropsCollected++;
 }
 
 function loadAssets() {
-	impact = loadSound("assets/impact.mp3");
+	bounce = loadSound("assets/bounce.mp3");
 	end = loadSound("assets/end2.mp3");
 	soundtrack = loadSound("assets/soundtrack2.mp3");
 	circle = loadImage("assets/circle.png");
 	coinSound = loadSound("assets/coin.mp3");
 	laser = loadSound("assets/laser.mp3");
+	hit = loadSound("assets/hit.wav");
+	slowSound = loadSound("assets/slowSound.wav");
+	shieldSound = loadSound("assets/shieldSound.wav");
+	shieldHit = loadSound("assets/shieldHit.wav");
+	gemSound = loadSound("assets/gem.wav");
+	waveSound = loadSound("assets/newWave.wav");
 }
 
 function updateText() {
@@ -190,8 +205,8 @@ function enemyMovement() {
 		if (enemy.position.x + enemy.width / 2 >= 1300 || enemy.position.x - enemy.width / 2 <= 0 || enemy.position.y + enemy.height / 2 >= 800 || enemy.position.y - enemy.height / 2 <= 0) {
 			enemy.width = 100;
 			enemy.height = 100;
-			if (!impact.isPlaying()) {
-				impact.play();
+			if (!bounce.isPlaying()) {
+				bounce.play();
 			}
 		}
 
@@ -207,11 +222,11 @@ function updatePickups() {
 	dropRate++;
 	if ((dropRate % 50 == 0) && (dropsMade - dropsCollected < 10)) {
 		var dropChoice = random(0, 100);
-		if (dropChoice > 70 && dropChoice <= 80) {
+		if (dropChoice > 70 && dropChoice <= 81) {
 			var pill = createSprite(random(10, width - 10), random(10, height - 10), 15, 15);
 			pill.shapeColor = "red";
 			gems.add(pill);
-		} else if (dropChoice > 80 && dropChoice <= 90) {
+		} else if (dropChoice > 81 && dropChoice <= 90) {
 			var shield = createSprite(random(10, width - 10), random(10, height - 10), 15, 15);
 			shield.shapeColor = "blue";
 			shields.add(shield);
@@ -241,10 +256,10 @@ function checkShieldBlock(player, enemy) {
 	if (hasShield) {
 		enemy.remove();
 		hasShield = false;
-		coinSound.play();
+		shieldHit.play();
 		findNewSpawns();
 		newEnemy = createSprite(spawnEnemyXPosition, spawnEnemyYPosition, 50, 50);
-		newEnemy.setSpeed(random(9, 13), spawnEnemyDirection);
+		newEnemy.setSpeed((random(7, 10) + enemySpeed), spawnEnemyDirection);
 		newEnemy.shapeColor = "rgb(" + String(parseInt(random(100, 255))) + "," + String(parseInt(random(100, 255))) + "," + String(parseInt(random(100, 255))) + ")";
 		enemies.add(newEnemy);
 	} else {
