@@ -25,10 +25,10 @@
 @media screen and (max-width: 481px) {
     #main-banner {
         height: 500px;
-        padding-top: 10px;
-        padding-left: 20px;
+        /*padding-top: 10px;*/
+        /*padding-left: 20px;*/
         width: 100%;
-        color: black;
+        /*color: black;*/
     }
     #main-banner h1 {}
     #main-banner p {
