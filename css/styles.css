@@ -139,4 +139,10 @@ nav .container-fluid .active a {
         padding-left: 10%;
         margin-top: -20px;
     }
+
+    .banner-description {
+        padding-top: 120px;
+        padding-left: 10%;
+        margin-top: -20px;
+    }
 }
