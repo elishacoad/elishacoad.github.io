@@ -1,0 +1,12 @@
+#main-banner{height:500px;padding-top:120px;color:black;}
+#main-banner h1{}
+#main-banner p{text-shadow:1px 1px 4px rgb(120, 120, 120);}
+#greeting-title{text-align:center;font-size:4vh;}
+#greeting{text-align:center;padding-bottom:10vh;font-size:2.5vh;}
+@media screen and (max-width:481px){#main-banner{height:500px;width:100%;}
+#main-banner h1{}
+#main-banner p{text-shadow:1px 1px 4px rgb(120, 120, 120);width:100%;font-size:3vh;}
+.col-md-12 .twine-tile .tile-description{visibility:hidden;}
+.twine-div{height:0px;}
+.banner-description{padding-top:20px;padding-left:10%;margin-top:-20px;}
+}
