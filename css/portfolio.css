@@ -1,7 +1,8 @@
 html,body
 {
     width: 100%;
-    height: 100%;
+    /*Creates problems with crossfade*/
+    /*height: 100%;*/
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
@@ -40,15 +41,12 @@ html,body
 	margin-top: -8px;
 }
 
-#portfolio-banner {
-	background-image: url("../images/banners/map.jpg");
-}
-
 #resume {
+    margin-top: -10vh;
 }
 
 .portfolio-header {
-	margin-top: 15vh;
+	margin-top: 10vh;
 	font-size: 5vh;
 }
 
@@ -56,8 +54,8 @@ hr {
 	margin-bottom: 50px;
     border: none;
     height: 1px;
-    color: #707070; /* old IE */
-    background-color: #707070; /* Modern Browsers */
+    color: #707070;
+    background-color: #707070;
 }
 
 .footer {
@@ -68,10 +66,13 @@ hr {
 	font-size: 12px;
 }
 
+@media screen and (max-width: 1000px) {
+    #resume-text {
+        margin-left: 4vh;
+    }
+}
+
 @media screen and (max-width: 481px) {
-	#resume-text {
-		padding-left: 4vh;
-	}
 	iframe {
 		height: 1800px;
 	}

@@ -29,6 +29,8 @@
     <!-- Fancy Scroll Library -->
     <script src="../libraries/fancyscroll/jquery.fancy-scroll.min.js"></script>
 
+    <!-- CrossFade -->
+    <script src="../libraries/imageCrossFade/master/dist/crossfade.jquery.js"></script>
     <!-- Lazy Scroll Library -->
     <script src="../libraries/lazyScroll/js/jquery.easing.1.3.js"></script>
     <script src="../libraries/lazyScroll/js/jquery.parallax-scroll.js"></script>
@@ -73,8 +75,13 @@
         </div>
     </nav>
     <main>
-        <div class="banner" id="twine-banner">
-            <h1>Twine</h1>
+        <div class="banner-small-crossfade">
+            <div class="crossfade-small" data-crossfade-start="../images/banners/twine1.jpg" data-crossfade-end="../images/banners/twine2.jpg">
+                <div class="banner-description">
+                    <h1>Twine</h1>
+                    <p></p>
+                </div>
+            </div>
         </div>
         <div class="container">
         <p id="intro">Twine is free software where you can make your own interactive stories. It's great for both new and experienced programmers, and delivers directly to how much you put in. This course will take you through the basics to the most advanced techniques, and you'll be able to learn macros and HTML along the way. Have fun!</p>

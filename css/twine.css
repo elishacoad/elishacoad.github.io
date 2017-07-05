@@ -1,8 +1,3 @@
-#twine-banner {
-    background-image: url("../images/banners/twine.jpg");
-    background-position: 50%;
-}
-
 #error {
 	display: none;
 	margin-left: 10px;

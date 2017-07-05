@@ -1,8 +1,3 @@
-#portfolio-banner {
-    background-image: url("../images/banners/contact.jpg");
-    background-position: 50%;
-}
-
 @media only screen and (max-width: 1026px) {
     #mail {
         display: none;

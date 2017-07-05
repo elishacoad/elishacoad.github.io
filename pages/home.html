@@ -31,6 +31,9 @@
     <!-- <link type="text/css" rel="stylesheet" href="../libraries/materialize/css/materialize.min.css"  media="screen,projection"/> -->
     <!-- <script type="text/javascript" src="../libraries/materialize/js/materialize.min.js"></script> -->
 
+    <!-- CrossFade -->
+    <script src="../libraries/imageCrossFade/master/dist/crossfade.jquery.js"></script>
+
     <!-- Fancy Scroll Library -->
     <script src="../libraries/fancyscroll/jquery.fancy-scroll.min.js"></script>
 
@@ -78,9 +81,13 @@
         </div>
     </nav>
     <main>
-        <div class="banner" id="main-banner">
-            <h1>Elisha Coad</h1>
-            <p>'Tis a pleasure to make your acquaintance</p>
+        <div class="banner-crossfade" id="main-banner">
+            <div class="crossfade" data-crossfade-start="../images/banners/city1.jpg" data-crossfade-end="../images/banners/city2.jpg">
+                <div class="banner-description">
+                    <h1>Elisha Coad</h1>
+                    <p>'Tis a pleasure to make your acquaintance</p>
+                </div>
+            </div>
         </div>
         <div class="container">
             <h1 id="greeting-title">print ("Hello World!")</h1>
