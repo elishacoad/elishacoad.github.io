@@ -1,12 +1,4 @@
-html,
-body {
-    width: 100%;
-    /*Creates problems with crossfade*/
-    /*height: 100%;*/
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
-}
+
 
 #center {
     text-align: center;
