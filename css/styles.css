@@ -1,3 +1,7 @@
+body {
+    overflow-y: hidden;
+}
+
 .navbar .nav a {
     cursor: pointer;
 }
@@ -66,14 +70,16 @@
     font-size: 20px;
 }
 
-.banner-crossfade h1, .banner-small-crossfade h1 {
+.banner-crossfade h1,
+.banner-small-crossfade h1 {
     font-size: 60px;
     font-weight: bold;
     position: relative;
     z-index: 1;
 }
 
-.banner-crossfade p, .banner-small-crossfade p {
+.banner-crossfade p,
+.banner-small-crossfade p {
     font-size: 20px;
     position: relative;
     z-index: 1;
@@ -139,7 +145,6 @@ nav .container-fluid .active a {
         padding-left: 10%;
         margin-top: -20px;
     }
-
     .banner-description {
         padding-top: 120px;
         padding-left: 10%;
