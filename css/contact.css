@@ -8,6 +8,7 @@
     }
 }
 
+
 #mail {
 	position: absolute;
 	height: 20%;
@@ -17,6 +18,8 @@
     right: 10%;
 }
 
-iframe {
-    margin-left: 20px;
+@media screen and (max-width: 481px) {
+    .banner-description h1 {
+        margin-left: -20px;
+    }
 }
