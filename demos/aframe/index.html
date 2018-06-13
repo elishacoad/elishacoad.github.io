@@ -10,20 +10,15 @@
 <body style='margin : 0px; overflow: hidden;'>
   <a-scene embedded arjs>
 
-    <a-assets>
-      <video id="video" autoplay loop="true" src="video360.mp4"></video>
-      <a-asset-item id="test" src="tree.gltf"></a-asset-item>
+    <a-assets timeout="5000">
+      <video id="video" autoplay loop="true" src="video360short.mp4"></video>
+      <a-asset-item id="test" src="damagedHelmet/damagedHelmet.gltf"></a-asset-item>
     </a-assets>
 
-    <a-video src="#video" width="8" height="4.5" position="0 0.5 -5"></a-video>
-
-    <a-entity gltf-model="#test" scale="0.4 0.4 0.4" position="0 0 0" rotation="0 80 0"></a-entity>
-    <!-- <a-image src="marker.png" position="0 0.5 0"></a-image> -->
-    <a-text value="Welcome to Lamplight Heritage" position="-1.5 0.2 0.6" rotation="-45 0 0" color="gold"></a-text>
-    <!-- <a-entity gltf-model="url(adamHead.gltf)"></a-entity> -->
-    <!-- <a-box position='0 0.5 0' material='opacity: 0.5;'></a-box> -->
+    <a-video src="#video" width="4" height="2" position="0 0.5 -2" rotation="90 180 0"></a-video>
+    <a-entity gltf-model="#test" scale=".7 .7 .7" position="0 0.8 0" rotation="90 180 0"></a-entity>
+    <a-text value="Welcome to Lamplight Heritage" position="-1.5 0.5 1" rotation="-90 0 0" color="green"></a-text>
     <a-marker-camera type='pattern' url='pattern-marker.patt'></a-marker-camera>
-    <!-- <a-marker-camera preset='hiro'></a-marker-camera> -->
   </a-scene>
 
 
